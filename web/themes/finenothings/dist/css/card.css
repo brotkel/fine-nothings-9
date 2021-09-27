@@ -1,0 +1,54 @@
+.card {
+  /* Add a max-width so this doesn't look super weird in
+  in the style guide. */
+  max-width: 350px;
+}
+
+.card__media-caption {
+  display: block;
+}
+
+.card__content {
+  margin-top: 2rem;
+}
+
+.card__title {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+
+.card__subhead {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.card__link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: currentColor;
+}
+
+/* Styles for Wide variation of Card */
+
+.card--wide {
+  display: flex;
+  flex-direction: column;
+}
+
+.card--wide .card__media {
+    flex: 1 1 0%;
+  }
+
+.card--wide .card__content {
+    flex: 1 1 0%;
+  }
+
+.card--wide .card__eyebrow {
+    margin-top: 0px;
+  }
+
+
+/*# sourceMappingURL=card.css.map */

@@ -1,0 +1,13 @@
+.card-list__title {
+  margin-bottom: 2rem;
+}
+
+.card-list__items {
+  list-style-type: none;
+}
+
+.card-list__item:not(:first-child) {
+    margin-top: 3rem;
+  }
+
+/*# sourceMappingURL=card-list.css.map */

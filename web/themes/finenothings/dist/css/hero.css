@@ -1,0 +1,23 @@
+.hero {
+  position: relative;
+}
+
+.hero__content {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--color-light-gray), var(--tw-bg-opacity));
+  padding: 1rem;
+  text-align: center;
+}
+
+.hero__heading {
+  margin-bottom: 0.5rem;
+}
+
+.hero__body {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  line-height: 1.625;
+  margin-bottom: 0.5rem;
+}
+
+/*# sourceMappingURL=hero.css.map */

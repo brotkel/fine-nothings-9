@@ -1,0 +1,20 @@
+.media-item__image img {
+    display: block;
+  }
+
+.media-item__caption {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-top: 0.5rem;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+/* Responsive styles for YouTube video embed. */
+
+.media-item__responsive-video {
+  height: 0px;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=media-item.css.map */

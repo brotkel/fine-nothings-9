@@ -1,0 +1,60 @@
+/* Buttons
+
+ This is the button component. It provides basic styles for buttons throughout the site.*/
+
+/* Import site utilities. */
+
+.button {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--color-light-gray), var(--tw-bg-opacity));
+  border-color: transparent;
+  border-radius: 0.125rem;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  text-align: center;
+  transition: background-color 0, color 0;
+}
+
+.button:hover, .button:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(var(--color-night), var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgba(var(--color-white), var(--tw-text-opacity));
+  }
+
+.button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+.button--primary {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--color-white), var(--tw-bg-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgba(var(--color-light-gray), var(--tw-border-opacity));
+  border-radius: 0.125rem;
+  border-width: 2px;
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-light-gray), var(--tw-text-opacity));
+  text-decoration: none;
+}
+
+.button--primary:hover, .button--primary:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(var(--color-white), var(--tw-bg-opacity));
+    --tw-bg-opacity: 0.8;
+    --tw-border-opacity: 1;
+    border-color: rgba(var(--color-light-gray), var(--tw-border-opacity));
+    border-width: 2px;
+    --tw-text-opacity: 1;
+    color: rgba(var(--color-light-gray), var(--tw-text-opacity));
+    text-decoration: none;
+  }
+
+/*# sourceMappingURL=button.css.map */
