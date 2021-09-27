@@ -26,7 +26,6 @@
 .accordion__heading {
   @apply block font-bold leading-relaxed text-base;
   display: block;
-
 }
 
 .accordion__content-wrapper {
