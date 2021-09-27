@@ -1,0 +1,15 @@
+.hero {
+  @apply relative;
+}
+
+.hero__content {
+  @apply bg-gray-light text-center p-4;
+}
+
+.hero__heading {
+  @apply mb-2;
+}
+
+.hero__body {
+  @apply leading-relaxed mb-2 text-base;
+}

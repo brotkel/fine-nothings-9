@@ -1,0 +1,47 @@
+/* Messages
+//
+// The messages component is mostly a duplicate of the Classy theme
+// styled system messages. There are slight modifiers added to give
+// more flexibility.
+*/
+
+.message {
+  @apply bg-no-repeat border-2 py-4 pr-5 pl-9 break-words;
+  background-position: 10px 17px;
+}
+
+.message + .message {
+  @apply mt-6;
+}
+
+.messages__list {
+  @apply list-none m-0 p-0;
+}
+
+.message__item + .message__item {
+  @apply mt-3;
+}
+
+/* See .color-success in Seven's colors.css. */
+.message--status {
+  color: #325e1c;
+  background-color: #f3faef;
+  border-color: #77b259;
+  background-image: url('../images/check.svg');
+}
+
+/* See .color-warning in Seven's colors.css. */
+.message--warning {
+  background-color: #fdf8ed;
+  background-image: url('../images/warning.svg');
+  border-color: #e09600;
+  color: #734c00;
+}
+
+/* See .color-error in Seven's colors.css. */
+.message--error {
+  background-color: #ffddde;
+  color: #a23433;
+  background-image: url('../images/error.svg');
+  border-color: #a23433;
+}

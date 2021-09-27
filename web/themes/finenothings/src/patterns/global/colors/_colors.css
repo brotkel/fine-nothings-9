@@ -1,0 +1,14 @@
+:root {
+  --color-white: 255, 255, 255;
+  --color-black: 0, 0, 0;
+  --color-light-gray: 132, 139, 189;
+  --color-night: 36, 27, 47;
+
+  --color-red: 249, 126, 114;
+  --color-orange: 209, 134, 22;
+  --color-yellow: 254, 222, 93;
+  --color-mint: 114, 241, 184;
+  --color-teal: 54, 249, 246;
+  --color-magenta: 136, 0, 136;
+  --color-pink: 255, 126, 219;
+}

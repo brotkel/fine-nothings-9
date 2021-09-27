@@ -1,0 +1,164 @@
+/* Raleway Mono */
+@font-face {
+  font-family: 'Raleway Flex';
+  src:
+    url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype supports variations'),
+    url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Raleway Flex';
+  src:
+    url('../fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype supports variations'),
+    url('../fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+  font-style: italic;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: fallback;
+}
+
+/* Josefin Slab Mono */
+@font-face {
+  font-family: 'Josefin Slab Flex';
+  src:
+    url('../fonts/JosefinSlab-VariableFont_wght.ttf') format('truetype supports variations'),
+    url('../fonts/JosefinSlab-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Josefin Slab Flex';
+  src:
+    url('../fonts/JosefinSlab-Italic-VariableFont_wght.ttf') format('truetype supports variations'),
+    url('../fonts/JosefinSlab-Italic-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+  font-style: italic;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Josefin Slab';
+  src: url('../fonts/JosefinSlab-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Josefin Slab';
+  src: url('../fonts/JosefinSlab-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Josefin Slab';
+  src: url('../fonts/JosefinSlab-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Josefin Slab';
+  src: url('../fonts/JosefinSlab-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: fallback;
+}
+
+/* Roboto Mono */
+@font-face {
+  font-family: 'Roboto Mono Flex';
+  src:
+    url('../fonts/RobotoMono-VariableFont_wght.ttf') format('truetype supports variations'),
+    url('../fonts/RobotoMono-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Roboto Mono Flex';
+  src:
+    url('../fonts/RobotoMono-Italic-VariableFont_wght.ttf') format('truetype supports variations'),
+    url('../fonts/RobotoMono-Italic-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+  font-style: italic;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('../fonts/RobotoMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('../fonts/RobotoMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('../fonts/RobotoMono-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('../fonts/RobotoMono-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: fallback;
+}

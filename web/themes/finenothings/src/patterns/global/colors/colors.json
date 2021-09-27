@@ -1,0 +1,54 @@
+{
+  "sections": {
+    "Primary": [
+      {
+        "name": "red",
+        "hex": "#f97e72"
+      },
+      {
+        "name": "orange",
+        "hex": "#d18616"
+      },
+      {
+        "name": "yellow",
+        "hex": "#fede5d"
+      },
+      {
+        "name": "mint",
+        "hex": "#72f1b8"
+      },
+      {
+        "name": "teal",
+        "hex": "#36f9f6"
+      },
+      {
+        "name": "magenta",
+        "hex": "#880088"
+      },
+      {
+        "name": "pink",
+        "hex": "#ff7eda"
+      }
+    ],
+    "Black &amp; White": [
+      {
+        "name": "black",
+        "hex": "#000000"
+      },
+      {
+        "name": "white",
+        "hex": "#FFFFFF"
+      }
+    ],
+    "Grays": [
+      {
+        "name": "gray-light",
+        "hex": "#848bbd"
+      },
+      {
+        "name": "night",
+        "hex": "#241b2f"
+      }
+    ]
+  }
+}

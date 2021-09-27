@@ -1,0 +1,73 @@
+@import './colors/_colors.css';
+@import './fonts/_fonts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  h1 {
+    @apply font-bold font-serif text-2xl;
+  }
+
+  h2 {
+    @apply font-bold font-serif text-xl;
+  }
+
+  h3 {
+    @apply font-serif text-xl;
+  }
+
+  h4 {
+    @apply font-bold font-serif text-lg;
+  }
+
+  h5 {
+    @apply italic font-serif text-lg;
+  }
+
+  h6 {
+    @apply font-serif;
+  }
+
+  mark {
+    @apply dark:bg-teal;
+  }
+
+  blockquote {
+    @apply bg-yellow bg-opacity-30 dark:bg-teal border border-yellow dark:border-teal p-4;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  input {
+    @apply border border-gray-light;
+  }
+
+  .visually-hidden {
+    @apply sr-only;
+  }
+}
+
+@layer components {
+  
+  .block,
+  .node {
+    
+    @apply mb-4;
+  }
+
+  .node__content p,
+  .node__content ul,
+  .node__content ol {
+
+    @apply mb-4 leading-normal;
+  }
+}

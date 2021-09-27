@@ -1,0 +1,26 @@
+{{ attach_library('finenothings/tabs') }}
+
+{% if primary %}
+  <h2 class="sr-only">{{ 'Primary tabs'|t }}</h2>
+  <ul class="tabs primary">
+    {% block primary %}
+      {% for tab in tabs %}
+        <li class="{{ is_active ? 'is-active' }}">
+          <a href="{{ tab.link }}">{{ tab.text }}</a>
+        </li>
+      {% endfor %}
+    {% endblock primary %}
+  </ul>
+{% endif %}
+{% if secondary %}
+  <h2 class="sr-only">{{ 'Secondary tabs'|t }}</h2>
+  <ul class="tabs secondary">
+    {% block secondary %}
+      {% for tab in tabs %}
+        <li class="{{is_active ? 'is-active' }}">
+          <a href="{{ tab.link }}">{{ tab.text }}</a>
+        </li>
+      {% endfor %}
+    {% endblock secondary %}
+  </ul>
+{% endif %}

@@ -1,0 +1,15 @@
+.media-item__image {
+
+  img {
+    @apply block;
+  }
+}
+
+.media-item__caption {
+  @apply mt-2 max-w-full text-sm break-words;
+}
+
+/* Responsive styles for YouTube video embed. */
+.media-item__responsive-video {
+  @apply h-0 overflow-hidden;
+}

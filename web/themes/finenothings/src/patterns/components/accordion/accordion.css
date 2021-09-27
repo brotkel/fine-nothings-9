@@ -1,0 +1,43 @@
+.accordion {
+  @apply border-b border-l border-r border-t-0 border-gray-light;
+  transition: background-color 0;
+
+  &:first-child {
+    @apply border-t;
+  }
+}
+
+.accordion__toggle {
+  @apply bg-gray-light border-0 cursor-pointer pl-6 pr-12 py-4 relative text-left w-full;
+
+  &::after {
+    @apply absolute bg-center bg-contain bg-no-repeat h-6 right-6 top-1/2 transform -translate-y-1/2 w-6;
+    background-image: url('../images/accordion__arrow.svg');
+    content: '';
+    transition: transform 0;
+    will-change: transform;
+
+    .open & {
+      @apply transform -rotate-180 -translate-y-1/2;
+    }
+  }
+}
+
+.accordion__heading {
+  @apply block font-bold leading-relaxed text-base;
+  display: block;
+
+}
+
+.accordion__content-wrapper {
+  @apply leading-relaxed max-h-0 overflow-hidden;
+  transition: max-height 0;
+
+  .open & {
+    @apply max-h-96;
+  }
+}
+
+.accordion__content {
+  @apply px-4 py-6;
+}

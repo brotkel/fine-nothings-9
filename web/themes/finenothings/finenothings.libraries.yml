@@ -1,0 +1,85 @@
+# These lines define the finenothings/global library.
+global:
+  css:
+    # The SMACSS category, "base", is loaded before other categories. Drupal 8
+    # loads stylesheets based on the SMACSS ordering of:
+    # base, layout, component, state, theme
+    base:
+      dist/css/tailwind.css: {}
+
+# Example external library.
+# webfonts:
+#   version: 1.x
+#   js:
+#     https://fast.fonts.net/example.js: { type: external, attributes: { async: true }}
+
+# Attach each library by using attach_library() within the components twig template.
+# More info: https://www.drupal.org/node/2456753
+
+# Example component library.
+# site-logo:
+#   css:
+#     component:
+#       dist/css/site-logo.css: {}
+#   # If this library had JavaScript you could specify it like this:
+#   js:
+#     js/script.js: {}
+#   # If this library had dependencies on other libraries, you could specify it like this:
+#   dependencies:
+#     - finenothings/clearfix
+#     - finenothings/visually-hidden
+
+accordion:
+  css:
+    component:
+      dist/css/accordion.css: {}
+  js:
+    dist/js/accordion.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+
+button:
+  css:
+    component:
+      dist/css/button.css: {}
+
+card:
+  css:
+    component:
+      dist/css/card.css: {}
+
+card-list:
+  css:
+    component:
+      dist/css/card-list.css: {}
+
+eyebrow:
+  css:
+    component:
+      dist/css/eyebrow.css: {}
+
+heading:
+  css:
+    component:
+      dist/css/heading.css: {}
+
+hero:
+  css:
+    component:
+      dist/css/hero.css: {}
+
+media-item:
+  css:
+    component:
+      dist/css/media-item.css: {}
+
+message:
+  css:
+    component:
+      dist/css/message.css: {}
+
+tabs:
+  css:
+    component:
+      dist/css/tabs.css: {}

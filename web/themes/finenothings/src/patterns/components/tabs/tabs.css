@@ -1,0 +1,52 @@
+/* Styling for Drupal tabs. */
+
+.tabs {
+  @apply flex list-none  m-0 py-6 relative;
+}
+
+.tabs.primary {
+  @apply p-0;
+
+  & li {
+    @apply block font-bold mb-2 p-0 text-sm;
+  }
+
+  & a {
+    @apply block bg-gray-light bg-opacity-30 border border-gray-light px-6 py-2 no-underline;
+  }
+
+  & a:focus,
+  & a:hover {
+    @apply bg-white bg-opacity-100 border-b-0 text-black dark:text-white;
+  }
+
+  & .is-active a {
+    @apply bg-white bg-opacity-100 border-b-0 text-black dark:text-white;
+  }
+}
+
+.tabs.secondary {
+  @apply mt-2;
+
+  & li {
+    @apply inline-block text-sm mt-2 ml-4 mb-1 mr-0;
+  }
+
+  & a {
+    @apply block bg-transparent border-b-2 border-gray-light text-black dark:text-white text-opacity-50 pt-2 px-3 pb-1;
+  }
+
+  & .is-active a,
+  & a:focus,
+  & a:hover {
+    @apply bg-transparent border-black text-black dark:text-white no-underline;
+  }
+}
+
+.tabs__local-actions {
+  @apply py-4 px-0;
+}
+
+.tabs__local-actions-links {
+  @apply m-0;
+}
