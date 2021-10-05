@@ -24,10 +24,10 @@
 
 .tabs.primary a {
     --tw-bg-opacity: 1;
-    background-color: rgba(var(--color-light-gray), var(--tw-bg-opacity));
+    background-color: rgba(var(--color-gray), var(--tw-bg-opacity));
     --tw-bg-opacity: 0.3;
     --tw-border-opacity: 1;
-    border-color: rgba(var(--color-light-gray), var(--tw-border-opacity));
+    border-color: rgba(var(--color-gray), var(--tw-border-opacity));
     border-width: 1px;
     display: block;
     padding-top: 0.5rem;
@@ -82,7 +82,7 @@
 .tabs.secondary a {
     background-color: transparent;
     --tw-border-opacity: 1;
-    border-color: rgba(var(--color-light-gray), var(--tw-border-opacity));
+    border-color: rgba(var(--color-gray), var(--tw-border-opacity));
     border-bottom-width: 2px;
     display: block;
     padding-left: 0.75rem;

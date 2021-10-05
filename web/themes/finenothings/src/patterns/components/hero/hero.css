@@ -3,7 +3,7 @@
 }
 
 .hero__content {
-  @apply bg-gray-light text-center p-4;
+  @apply bg-gray text-center p-4;
 }
 
 .hero__heading {

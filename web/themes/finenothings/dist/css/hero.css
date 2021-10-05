@@ -4,7 +4,7 @@
 
 .hero__content {
   --tw-bg-opacity: 1;
-  background-color: rgba(var(--color-light-gray), var(--tw-bg-opacity));
+  background-color: rgba(var(--color-gray), var(--tw-bg-opacity));
   padding: 1rem;
   text-align: center;
 }

@@ -15,6 +15,8 @@
     ],
     "require": {
         "drupal/components": "^3.0@beta",
+        "drupal/paragraphs": "^1.12",
+        "drupal/twigsuggest": "^1.0@beta",
         "drush/drush": "^10",
         "pantheon-upstreams/upstream-configuration": "*"
     },

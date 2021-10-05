@@ -72,8 +72,11 @@
 #}
 <article{{ attributes.addClass('node') }}>
 
-  {{ title_prefix }}
-  {% if not page %}
+  <header class="flex flex-col items-center mx-auto w-2/3 md:w-1/2 lg:w-1/3">
+    {{ content.field_article_header_image }}
+
+    {{ title_prefix }}
+    {% if not page %}
       {%
         embed "@finenothings/heading/heading.twig" with {
           "extra_attributes": title_attributes|without(class),
@@ -88,20 +91,25 @@
         {% endblock heading %}
       {% endembed %}
     {% endif %}
-  {{ title_suffix }}
+    {{ title_suffix }}
+  </header>
 
   {% if display_submitted %}
-    <footer>
+    <footer class="flex flex-row items-center justify-center mx-auto md:w-3/4 lg:w-2/3">
       {{ author_picture }}
-      <div{{ author_attributes }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+      <div class="mx-2" {{ author_attributes }}>
+        {{ date }}
         {{ metadata }}
       </div>
+      <div class="mx-2">
+        {{ content.field_tags }}
+      </div>
+
     </footer>
   {% endif %}
 
-  <div{{ content_attributes.addClass('node-content') }}>
-    {{ content }}
+  <div class="mx-auto md:w-3/4 lg:w-2/3" {{ content_attributes.addClass('node-content') }}>
+    {{ content.field_body }}
   </div>
 
 </article>

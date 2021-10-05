@@ -4,7 +4,7 @@
 
 /* Import site utilities. */
 .button {
-  @apply bg-gray-light border border-transparent cursor-pointer inline-block font-bold px-3 py-5 rounded-sm text-center;
+  @apply bg-gray bg-opacity-50 border border-transparent cursor-pointer inline-block font-bold px-3 py-5 rounded-sm text-center;
   transition: background-color 0, color 0;
 
   &:hover,
@@ -18,10 +18,10 @@
 }
 
 .button--primary {
-  @apply bg-white border-2 border-gray-light no-underline rounded-sm text-gray-light;
+  @apply bg-white border-2 border-gray border-opacity-50 no-underline rounded-sm text-gray text-opacity-50;
 
   &:hover,
   &:active {
-    @apply bg-white bg-opacity-80 border-2 border-gray-light no-underline text-gray-light;
+    @apply bg-white bg-opacity-80 border-2 border-gray border-opacity-50 no-underline text-gray text-opacity-50;
   }
 }

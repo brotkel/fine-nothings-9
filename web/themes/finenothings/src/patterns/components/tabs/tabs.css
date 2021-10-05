@@ -12,7 +12,7 @@
   }
 
   & a {
-    @apply block bg-gray-light bg-opacity-30 border border-gray-light px-6 py-2 no-underline;
+    @apply block bg-gray bg-opacity-30 border border-gray px-6 py-2 no-underline;
   }
 
   & a:focus,
@@ -33,7 +33,7 @@
   }
 
   & a {
-    @apply block bg-transparent border-b-2 border-gray-light text-black dark:text-white text-opacity-50 pt-2 px-3 pb-1;
+    @apply block bg-transparent border-b-2 border-gray text-black dark:text-white text-opacity-50 pt-2 px-3 pb-1;
   }
 
   & .is-active a,

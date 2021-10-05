@@ -1,0 +1,39 @@
+/* stylelint-disable function-comma-space-after */
+.sunrise {
+  aspect-ratio: 8/5;
+  mask-image:
+    linear-gradient(0deg,
+    rgba(0, 0, 0, 1) 0%, 
+    rgba(0, 0, 0, 1) 8%, 
+    rgba(0, 0, 0, 0) 8%, 
+    rgba(0, 0, 0, 0) 12%, 
+    rgba(0, 0, 0, 1) 12%, 
+    rgba(0, 0, 0, 1) 16%, 
+    rgba(0, 0, 0, 0) 16%, 
+    rgba(0, 0, 0, 0) 18%, 
+    rgba(0, 0, 0, 1) 18%,
+    rgba(0, 0, 0, 1) 22%,
+    rgba(0, 0, 0, 0) 22%,
+    rgba(0, 0, 0, 0) 24%,
+    rgba(0, 0, 0, 1) 24%,
+    rgba(0, 0, 0, 1) 27%,
+    rgba(0, 0, 0, 0) 27%,
+    rgba(0, 0, 0, 0) 29%,
+    rgba(0, 0, 0, 1) 29%,
+    rgba(0, 0, 0, 1) 100%);
+  /* stylelint-enable function-comma-space-after */
+
+  img,
+  picture {
+    aspect-ratio: 1;
+    margin-top: -20%;
+    object-fit: cover;
+    width: 100%;
+    filter: sepia(1) saturate(3) hue-rotate(-80deg) brightness(0.6);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    clip-path: circle(50% at 50% 70%);
+    filter: none;
+  }
+}

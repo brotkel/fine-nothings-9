@@ -2,10 +2,9 @@
  * @file
  * Behaviors for the Filter Accordion.
  */
+'use strict';
 
 !((Drupal, $) => {
-  'use strict';
-
   /**
    * Setup and attach the Filter Accordion behaviors.
    *

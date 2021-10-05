@@ -1,0 +1,4 @@
+{
+  "filename": "sample.js",
+  "code": "{% if url %}\n  &lt;a href='{{ url }}' class='heading__link'&gt;{{ title }}&lt;/a&gt;\n{% else %}\n  {{ title }}\n{% endif %}"
+}

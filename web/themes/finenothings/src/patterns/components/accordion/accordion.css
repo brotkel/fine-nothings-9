@@ -1,5 +1,5 @@
 .accordion {
-  @apply border-b border-l border-r border-t-0 border-gray-light;
+  @apply border-b border-l border-r border-t-0 border-gray border-opacity-50;
   transition: background-color 0;
 
   &:first-child {
@@ -8,7 +8,7 @@
 }
 
 .accordion__toggle {
-  @apply bg-gray-light border-0 cursor-pointer pl-6 pr-12 py-4 relative text-left w-full;
+  @apply bg-gray bg-opacity-50 border-0 cursor-pointer pl-6 pr-12 py-4 relative text-left w-full;
 
   &::after {
     @apply absolute bg-center bg-contain bg-no-repeat h-6 right-6 top-1/2 transform -translate-y-1/2 w-6;

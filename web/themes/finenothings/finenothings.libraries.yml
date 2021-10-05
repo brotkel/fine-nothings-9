@@ -83,3 +83,17 @@ tabs:
   css:
     component:
       dist/css/tabs.css: {}
+
+tag:
+  css:
+    component:
+
+code:
+  css:
+    component:
+      
+
+sunrise:
+  css:
+    component:
+      dist/css/sunrise.css: {}

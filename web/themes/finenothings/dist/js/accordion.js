@@ -2,14 +2,14 @@
  * @file
  * Behaviors for the Filter Accordion.
  */
+'use strict';
+
 !function (Drupal, $) {
-  'use strict';
   /**
    * Setup and attach the Filter Accordion behaviors.
    *
    * @type {Drupal~behavior}
    */
-
   Drupal.behaviors.accordion = {
     attach: function attach(context) {
       var self = this;

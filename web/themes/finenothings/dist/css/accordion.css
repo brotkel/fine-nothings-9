@@ -1,6 +1,7 @@
 .accordion {
   --tw-border-opacity: 1;
-  border-color: rgba(var(--color-light-gray), var(--tw-border-opacity));
+  border-color: rgba(var(--color-gray), var(--tw-border-opacity));
+  --tw-border-opacity: 0.5;
   border-top-width: 0px;
   border-right-width: 1px;
   border-bottom-width: 1px;
@@ -13,7 +14,8 @@
 
 .accordion__toggle {
   --tw-bg-opacity: 1;
-  background-color: rgba(var(--color-light-gray), var(--tw-bg-opacity));
+  background-color: rgba(var(--color-gray), var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.5;
   border-width: 0px;
   cursor: pointer;
   padding-top: 1rem;

@@ -1,0 +1,36 @@
+{	
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.insertSpaces": true,
+    	"editor.tabSize": 2,
+		"files.exclude": {
+			"**/config": true,
+			"**/upstream-configuration": true,
+			"**/vendor": true,
+			"**/web/core": false,
+			"**/web/modules": false,
+			"**/web/profiles": true,
+			"**/web/sites": true,
+			"**/web/themes/finenothings/dist": true,
+			"**/web/themes/finenothings/patternlab": true,
+			"**/node_modules": true,
+			"**/*.lock": true,
+		},
+		"search.exclude": {
+			"**/config": true,
+			"**/upstream-configuration": true,
+			"**/vendor": true,
+			"**/web/core": true,
+			"**/web/modules": true,
+			"**/web/sites": true,
+			"**/web/themes/finenothings/dist": true,
+			"**/web/themes/finenothings/patternlab": true,
+			"**/web/themes/finenothings/node_modules": true,
+			"**/*.lock": true,
+		}
+	}
+}

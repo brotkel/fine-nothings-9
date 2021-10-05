@@ -1,8 +1,10 @@
 :root {
   --color-white: 255, 255, 255;
+  --color-paperwhite: 255, 255, 238;
   --color-black: 0, 0, 0;
-  --color-light-gray: 132, 139, 189;
+  --color-sky: 132, 139, 189;
   --color-night: 36, 27, 47;
+  --color-gray: 128, 128, 128;
   --color-red: 249, 126, 114;
   --color-orange: 209, 134, 22;
   --color-yellow: 254, 222, 93;
@@ -10,6 +12,7 @@
   --color-teal: 54, 249, 246;
   --color-magenta: 136, 0, 136;
   --color-pink: 255, 126, 219;
+  --color-maroon: 95, 51, 55;
 }
 
 /*# sourceMappingURL=_colors.css.map */

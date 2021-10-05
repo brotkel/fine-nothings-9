@@ -28,6 +28,10 @@
       {
         "name": "pink",
         "hex": "#ff7eda"
+      },
+      {
+        "name": "maroon",
+        "hex": "#5f3337"
       }
     ],
     "Black &amp; White": [
@@ -42,12 +46,20 @@
     ],
     "Grays": [
       {
-        "name": "gray-light",
+        "name": "gray",
+        "hex": "#888888"
+      },
+      {
+        "name": "sky",
         "hex": "#848bbd"
       },
       {
         "name": "night",
         "hex": "#241b2f"
+      },
+      {
+        "name": "paperwhite",
+        "hex": "#ffffffee"
       }
     ]
   }

@@ -21,10 +21,10 @@ module.exports = {
       current: 'currentColor',
       black: colorFn('color-black'),
       white: colorFn('color-white'),
-      gray: {
-        light: colorFn('color-light-gray'),
-      },
+      paperwhite: colorFn('color-paperwhite'),
+      sky: colorFn('color-sky'),
       night: colorFn('color-night'),
+      gray: colorFn('color-gray'),
       red: colorFn('color-red'),
       orange: colorFn('color-orange'),
       yellow: colorFn('color-yellow'),
@@ -32,13 +32,18 @@ module.exports = {
       teal: colorFn('color-teal'),
       magenta: colorFn('color-magenta'),
       pink: colorFn('color-pink'),
+      maroon: colorFn('color-maroon'),
     },
     fontFamily: {
       sans: ['Raleway Flex', 'Raleway', 'ui-sans-serif', 'sans-serif'],
       serif: ['Josefin Slab Flex', 'Josefin Slab', 'ui-serif', 'serif'],
       mono: ['Roboto Mono Flex', 'Roboto Mono', 'ui-monospace', 'monospace'],
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        cover: 'inset 0px -10px 10px 0 rgba(0, 0, 0, .1)',
+      }
+    },
   },
   variants: {
     extend: {
