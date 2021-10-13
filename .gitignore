@@ -122,6 +122,7 @@ upstream/web/
 /web/sites/example.sites.php
 /web/themes/README.txt
 /.drush-lock-update
+*.DS_Store
 
 # Other common rules
 # ------------------

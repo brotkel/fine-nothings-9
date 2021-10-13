@@ -97,3 +97,8 @@ sunrise:
   css:
     component:
       dist/css/sunrise.css: {}
+  js:
+    dist/js/sunrise.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery

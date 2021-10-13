@@ -17,6 +17,7 @@
         "drupal/components": "^3.0@beta",
         "drupal/paragraphs": "^1.12",
         "drupal/twigsuggest": "^1.0@beta",
+        "drupal/viewsreference": "^2.0@beta",
         "drush/drush": "^10",
         "pantheon-upstreams/upstream-configuration": "*"
     },

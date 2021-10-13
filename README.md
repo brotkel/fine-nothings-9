@@ -6,7 +6,7 @@
 * PHP 7.4
 * Composer 2.1
 * Node 16
-* Lando 3.32
+* Lando 3.4.2
 * Docker v3.6
 
 ### Updating dependencies
@@ -22,4 +22,8 @@
 ### Node/Gulp/Patternlab: 
 * `cd web/themes/finenothings/`
 * `npm run watch`
-* Load http://localhost:3001
+* Load http://localhost:3000
+
+## Building for Pantheon
+* `npm run build`
+* `lando push -m "Commit message" --database=dev`
