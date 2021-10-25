@@ -4,3 +4,6 @@ config:
   framework: drupal8
   site: fine-nothings-9
   id: e83dd363-8ac4-456b-ba24-a2b929eaf581
+services:
+  database:
+    type: mariadb:10.4
