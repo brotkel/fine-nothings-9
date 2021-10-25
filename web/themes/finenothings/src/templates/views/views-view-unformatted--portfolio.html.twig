@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Theme implementation to display a Card List paragraph.
+ *
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = []
+%}
+{%
+  embed "@finenothings/card-list/card-list.twig" with {
+    "section_title": title,
+    "heading_level": "h1",
+    "cards": rows,
+    "modifier": attributes.addClass(classes).class,
+    "extra_attributes": attributes|without(class)
+  } only
+%}
+  {% block card_items %}
+    {{ cards }}
+  {% endblock card_items %}
+{% endembed %}

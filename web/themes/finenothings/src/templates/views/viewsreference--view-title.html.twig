@@ -1,0 +1,10 @@
+{% if title %}
+  {%
+    include '@finenothings/heading/heading.twig' with {
+      "title": title,
+      "heading_level": heading_level,
+      "modifier": "viewsreference--view-title mt-8 text-center"
+    } only
+  %}
+{% endif %}
+

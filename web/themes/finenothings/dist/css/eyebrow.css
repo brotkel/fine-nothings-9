@@ -1,5 +1,5 @@
-.eyebrow__text {
-  font-size: 0.75rem;
-}
+.eyebrow__text a:hover {
+    text-decoration: underline
+  }
 
 /*# sourceMappingURL=eyebrow.css.map */

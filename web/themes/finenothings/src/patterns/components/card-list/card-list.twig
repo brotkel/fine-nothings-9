@@ -15,12 +15,12 @@
       include '@finenothings/heading/heading.twig' with {
         "title": section_title,
         "heading_level": heading_level,
-        "modifier": "card-list__title"
+        "modifier": "card-list__title mb-8"
       } only
     %}
   {% endif %}
 
-  <ul class="card-list__items">
+  <ul class="card-list__items block lg:flex list-none">
     {% block card_items %}
       {#
         This for loop is only used to display the card list
@@ -28,7 +28,7 @@
         See paragraph--card-list.html.twig for more info.
       #}
       {% for item in items %}
-        <li class="card-list__item">
+        <li class="card-list__item flex-1 p-4">
           {%
             include '@finenothings/card/card.twig' with {
               "image": item.image,

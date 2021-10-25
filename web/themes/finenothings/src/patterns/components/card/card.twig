@@ -1,6 +1,6 @@
 {{ attach_library('finenothings/card') }}
 
-<article class="card {{ modifier }}" {{ extra_attributes }}>
+<article class="card group relative overflow-hidden rounded {{ modifier }}" {{ extra_attributes }}>
   {#
     Optional: Pass in Drupal specific functionality.
     Note that this is mostly relevant to nodes and blocks.
@@ -9,58 +9,67 @@
     {{ title_prefix }}
     {{ title_suffix }}
   #}
+  <div class="card__top relative overflow-hidden">
+    <div class="card__media transition-all group-hover:filter group-hover:brightness-50 group-hover:sepia">
+      {% if image %}
+        {{ image }}
+      {% elseif video %}
+        {{ video }}
+      {% endif %}
+    </div>
 
-  <div class="card__media">
-    {% if image %}
-      {{ image }}
-    {% elseif video %}
-      {{ video }}
-    {% endif %}
-    <span class="card__media-caption">
-      {{ caption }}
-    </span>
+    <div class="card__heading 
+      absolute top-1/2 left-1/2 w-full h-full p-8 pointer-events-none
+      transition-all transform-gpu -translate-x-1/2 translate-y-2 
+      opacity-0 text-center text-white text-shadow-sm
+      group-hover:opacity-100 group-hover:-translate-x-1/2 group-hover:-translate-y-1/4"
+    >
+      {% if title %}
+        {%
+          include '@finenothings/heading/heading.twig' with {
+            "title": title,
+            "heading_level": heading_level,
+            "modifier": "card__title font-normal mt-4 text-2xl",
+            "url": url
+          } only
+        %}
+      {% endif %}
+
+      {% if subhead %}
+        {%
+          include '@finenothings/heading/heading.twig' with {
+            "title": subhead,
+            "heading_level": subhead_level,
+            "modifier": "card__subhead font-bold text-xl"
+          } only
+        %}
+      {% endif %}
+    </div>
   </div>
 
-  <div class="card__content">
-    {% if eyebrow %}
-      {%
-        include '@finenothings/eyebrow/eyebrow.twig' with {
-          "text": eyebrow,
-          "modifier": "card__eyebrow"
-        } only
-      %}
-    {% endif %}
+  {% if text %}
+    <div class="card__content px-8 py-4 bg-paperwhite">
+      {% if eyebrow %}
+        {%
+          include '@finenothings/eyebrow/eyebrow.twig' with {
+            "text": eyebrow,
+            "modifier": "card__eyebrow"
+          } only
+        %}
+      {% endif %}
 
-    {% if title %}
-      {%
-        include '@finenothings/heading/heading.twig' with {
-          "title": title,
-          "heading_level": heading_level,
-          "modifier": "card__title",
-          "url": url
-        } only
-      %}
-    {% endif %}
 
-    {% if subhead %}
-      {%
-        include '@finenothings/heading/heading.twig' with {
-          "title": subhead,
-          "heading_level": subhead_level,
-          "modifier": "card__subhead"
-        } only
-      %}
-    {% endif %}
-
-    {% if text %}
       <div class="card__summary">
         {{ text }}
       </div>
-    {% endif %}
+    </div>
+  {% endif %}
 
-    {% if link_text %}
-      <a href="{{ url }}" class="card__link">{{ link_text }}</a>
-    {% endif %}
-  </div>
+
+  {% if url %}
+    <a href="{{ url }}" class="card__link absolute top-0 left-0 bottom-0 right-0 w-full h-full shadow-cover">
+      <span class="sr-only">{{ title }}</a>
+    </a>
+  {% endif %}
 
 </article>

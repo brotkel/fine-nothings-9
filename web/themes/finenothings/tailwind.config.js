@@ -47,7 +47,12 @@ module.exports = {
   },
   variants: {
     extend: {
-      fontFamily: ['dark']
+      brightness: ['group-hover', 'hover'],
+      filter: ['group-hover', 'hover'],
+      fontFamily: ['dark'],
+      sepia: ['group-hover', 'hover'],
+      transform: ['group-hover', 'hover'],
+      translate: ['group-hover', 'hover'],
     },
   },
   plugins: [

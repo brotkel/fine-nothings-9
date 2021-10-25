@@ -1,27 +1,8 @@
-.card {
-  /* Add a max-width so this doesn't look super weird in
-  in the style guide. */
-  max-width: 350px;
-}
-
-.card__media-caption {
-  @apply block;
-}
-
-.card__content {
-  @apply mt-8;
-}
-
-.card__title {
-  @apply font-normal mt-4 text-2xl;
-}
-
-.card__subhead {
-  @apply font-normal text-xl;
-}
-
-.card__link {
-  @apply inline-block mt-6 text-current;
+.card__media {
+  
+  img {
+    @apply w-full;
+  }
 }
 
 /* Styles for Wide variation of Card */
