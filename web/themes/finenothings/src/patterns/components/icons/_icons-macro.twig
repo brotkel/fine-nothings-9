@@ -8,6 +8,10 @@
  *   that exist within the icons/assets/ directory.
  */
 #}
-{% macro get(name) %}
-  {% include '@finenothings/icons/assets/' ~ name ~ '.svg' %}
+{% macro get(icon, iconClass) %}
+  {% include '@finenothings/icons/assets/' ~ icon ~ '.svg.twig' with {
+    'icon': icon,
+    'iconClass': iconClass
+    } only
+  %}
 {% endmacro %}

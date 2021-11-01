@@ -1,0 +1,22 @@
+{{ attach_library('finenothings/social-icons') }}
+
+<ul class="social-icons flex justify-around flex-wrap items-center gap-4">
+  {% for item in items %}
+    <li class="social-icon list-none p-6 relative bg-paperwhite rounded-xl shadow-inner filter hover:brightness-95">
+      {%
+        include '@finenothings/icons/icons.twig' with {
+          "icon": item.icon,
+          "image": item.image,
+          "text": item.text,
+          "url": item.url,
+          "extra_attributes": attributes|without(class),
+          "modifier_mapping": {
+            "list": "",
+            "item": "social_icon__item",
+            "icon": "w-12 h-12",
+          }
+        } only
+      %}
+    </li>
+  {% endfor %}
+</ul>

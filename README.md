@@ -27,3 +27,9 @@
 ## Building for Pantheon
 * `npm run build`
 * `lando push -m "Commit message" --database=dev`
+
+## Development
+
+### Creating a new component in Patternlab
+* `cd web/themes/finenothings/`
+* `yo mc-d8-theme:component 'Card'`

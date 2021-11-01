@@ -102,3 +102,7 @@ sunrise:
   dependencies:
     - core/drupal
     - core/jquery
+
+social-icons:
+  css:
+    component:

@@ -1,19 +1,7 @@
 {
-  "items":[
-    {
-      "icon": "facebook"
-    },
-    {
-      "icon": "twitter"
-    },
-    {
-      "icon": "youtube"
-    },
-    {
-      "icon": "pinterest"
-    },
-    {
-      "icon": "instagram"
-    }
-  ]
+  "icon": "facebook",
+  "text": "Facebook",
+  "url": "https://facebook.com",
+  "modifier_mapping": {},
+  "override": true
 }

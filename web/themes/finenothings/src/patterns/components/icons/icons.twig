@@ -1,9 +1,17 @@
 {% import "@finenothings/icons/_icons-macro.twig" as icons %}
-<div class="pl-icons">
-{% for item in items %}
-  <div class="pl-icons__item">
-    {{ icons.get(item.icon, 'pl-icons__icon') }}
-    <p class="pl-icons__name">{{ item.icon }}</p>
+{% block icon_items %}
+  <div class="{{ override ? 'pl-icons' : 'icons' }} {{ modifier_mapping.list }}" {{ extra_attributes }}>
+    <div class="{{ override ? 'pl-icons__item' : 'icons__item' }} {{ modifier_mapping.item }}">
+      {% if icon %}
+        {{ icons.get(icon, 'pl-icons__icon ' ~ modifier_mapping.icon) }}
+      {% elseif image %}
+        {{ image }}
+      {% endif %}
+      {% if url %}
+      <a href="{{ url }}" class="{{ override ? 'pl-icons__link' : 'icons__link' }} w-full h-full absolute top-0 left-0 flex items-center justify-center">
+        <p class="{{ override ? 'pl-icons__name' : 'icons__name sr-only' }}">{{ override ? icon : text }}</p>
+      </a>
+      {% endif %}
+    </div>
   </div>
-{% endfor %}
-</div>
+{% endblock %}

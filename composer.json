@@ -15,9 +15,12 @@
     ],
     "require": {
         "drupal/components": "^3.0@beta",
+        "drupal/devel": "^4.1",
+        "drupal/devel_kint_extras": "^1.0",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
         "drupal/twig_field_value": "^2.0",
+        "drupal/twig_tweak": "^3.1",
         "drupal/twigsuggest": "^1.0@beta",
         "drupal/viewsreference": "^2.0@beta",
         "drush/drush": "^10",
@@ -62,5 +65,8 @@
         "platform": {
             "php": "7.4"
         }
+    },
+    "require-dev": {
+        "kint-php/kint": "^3.3"
     }
 }
