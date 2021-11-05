@@ -57,8 +57,7 @@
 }
 
 @layer components {
-  
-  .block,
+
   .node {
     
     @apply mb-4;

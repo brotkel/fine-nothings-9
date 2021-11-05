@@ -47,12 +47,12 @@ module.exports = {
   },
   variants: {
     extend: {
-      brightness: ['group-hover', 'hover'],
-      filter: ['group-hover', 'hover'],
+      brightness: ['group-focus', 'focus', 'group-hover', 'hover'],
+      filter: ['group-focus', 'focus', 'group-hover', 'hover'],
       fontFamily: ['dark'],
-      sepia: ['group-hover', 'hover'],
-      transform: ['group-hover', 'hover'],
-      translate: ['group-hover', 'hover'],
+      sepia: ['group-focus', 'focus', 'group-hover', 'hover'],
+      transform: ['group-focus', 'focus', 'group-hover', 'hover'],
+      translate: ['group-focus', 'focus', 'group-hover', 'hover'],
     },
   },
   plugins: [

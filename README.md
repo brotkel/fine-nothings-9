@@ -32,4 +32,4 @@
 
 ### Creating a new component in Patternlab
 * `cd web/themes/finenothings/`
-* `yo mc-d8-theme:component 'Card'`
+* `yo mc-d8-theme:component --name='Card'`

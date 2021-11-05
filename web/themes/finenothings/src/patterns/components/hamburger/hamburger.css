@@ -1,0 +1,15 @@
+.hamburger > ul ul a {
+  @apply pl-6;
+}
+
+.hamburger > input:checked ~ ul {
+  @apply block;
+}
+
+.hamburger > input:checked ~ .closed {
+  @apply hidden;
+}
+
+.hamburger > input:checked ~ .open {
+  @apply block;
+}

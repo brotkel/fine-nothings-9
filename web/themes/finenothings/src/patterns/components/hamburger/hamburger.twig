@@ -1,0 +1,77 @@
+{{ attach_library('finenothings/hamburger') }}
+{#
+/**
+ * @file
+ * Theme override to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *   - is_expanded: TRUE if the link has visible children within the current
+ *     menu tree.
+ *   - is_collapsed: TRUE if the link has children within the current menu tree
+ *     that are not currently visible.
+ *   - in_active_trail: TRUE if the link is in the active trail.
+ */
+#}
+{% import _self as menus %}
+
+{#
+  We call a macro which calls itself to render the full tree.
+  @see https://twig.symfony.com/doc/1.x/tags/macro.html
+#}
+{% set icons = { "closed": icons.closed ? icons.closed : "hamburger", "open": icons.open ? icons.open : "hamburger" }  %}
+
+<div class="hamburger inline-block relative select-none text-black z-10">
+  <input type="checkbox" class="absolute block cursor-pointer h-7 left-2 opacity-0 w-9 z-30" />
+  
+  {%
+    include '@finenothings/icons/icons.twig' with {
+      "icon": icons.closed,
+      "extra_attributes": attributes|without(class),
+      "modifier_mapping": {
+        "list": "closed bg-paperwhite bg-gradient-to-b border border-black border-opacity-20 left-2 px-2 py-1 relative z-20",
+        "icon": "w-4 h-4",
+      }
+    } only
+  %}
+  {%
+    include '@finenothings/icons/icons.twig' with {
+      "icon": icons.open,
+      "extra_attributes": attributes|without(class),
+      "modifier_mapping": {
+        "list": "open bg-paperwhite bg-gradient-to-b from-white border border-black border-opacity-20 hidden left-2 px-2 py-1 relative z-20 shadow-inner",
+        "icon": "w-4 h-4",
+      }
+    } only
+  %}
+
+  {{ menus.menu_links(items, 0) }}
+</div>
+
+{% macro menu_links(items, menu_level) %}
+  {% import _self as menus %}
+    {% if items %}
+      {% if menu_level == 0 %}
+        <ul class="absolute bg-paperwhite list-none hidden -my-8 pt-10 pb-2 shadow z-10">
+      {% else %}
+        <ul class="list-none">
+      {% endif %}
+      {% for item in items %}
+        <li{{ item.attributes }}>
+          <a href="{{ item.url }}" class="block bg-black bg-opacity-0 whitespace-nowrap transition-colors px-4 hover:bg-opacity-10 py-2">
+            {{ item.title }}
+          </a>
+          {% if item.below %}
+            {{ menus.menu_links(item.below, menu_level + 1) }}
+          {% endif %}
+        </li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+{% endmacro %}

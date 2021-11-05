@@ -29,9 +29,9 @@ base theme: stable
 libraries-override:
   system/base:
     css:
-      component:
+      component: []
         # Replace one file with another.
-        /core/themes/stable/css/system/components/hidden.module.css: dist/css/hidden.css
+        # /core/themes/stable/css/system/components/hidden.module.css: dist/css/hidden.css
 
 # The "libraries-extend:" section will allow you to add your own JS or CSS to
 # existing libraries.
@@ -61,6 +61,8 @@ components:
 # the semi-colon is the machine name of the region. The text after the
 # semi-colon is the region's description used on the admin/structure/block page.
 regions:
+  primary_menu: Primary Menu
+  secondary_menu: Secondary Menu
   header: Header
   content: Content
   footer: Footer

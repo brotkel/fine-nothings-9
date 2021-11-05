@@ -6,13 +6,13 @@
 */
 
 .message {
-  background-repeat: no-repeat;
+  overflow-wrap: break-word;
   border-width: 2px;
+  background-repeat: no-repeat;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-right: 1.25rem;
   padding-left: 2.25rem;
-  overflow-wrap: break-word;
   background-position: 10px 17px;
 }
 
@@ -21,8 +21,8 @@
 }
 
 .messages__list {
-  list-style-type: none;
   margin: 0px;
+  list-style-type: none;
   padding: 0px;
 }
 

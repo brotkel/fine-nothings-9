@@ -13,7 +13,7 @@
  */
 #}
 {% if content %}
-  <div{{ attributes }} class="container mx-auto">
+  <div{{ attributes.addClass("container mx-auto") }}>
     {{ content }}
   </div>
 {% endif %}

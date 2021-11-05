@@ -1,12 +1,12 @@
 /* Styling for Drupal tabs. */
 
 .tabs {
+  position: relative;
+  margin: 0px;
   display: flex;
   list-style-type: none;
-  margin: 0px;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  position: relative;
 }
 
 .tabs.primary {
@@ -14,34 +14,34 @@
 }
 
 .tabs.primary li {
+    margin-bottom: 0.5rem;
     display: block;
-    font-weight: 700;
+    padding: 0px;
     font-size: 0.875rem;
     line-height: 1.25rem;
-    margin-bottom: 0.5rem;
-    padding: 0px;
+    font-weight: 700;
   }
 
 .tabs.primary a {
+    display: block;
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgba(var(--color-gray), var(--tw-border-opacity));
     --tw-bg-opacity: 1;
     background-color: rgba(var(--color-gray), var(--tw-bg-opacity));
     --tw-bg-opacity: 0.3;
-    --tw-border-opacity: 1;
-    border-color: rgba(var(--color-gray), var(--tw-border-opacity));
-    border-width: 1px;
-    display: block;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     text-decoration: none;
   }
 
 .tabs.primary a:focus, .tabs.primary a:hover {
+    border-bottom-width: 0px;
     --tw-bg-opacity: 1;
     background-color: rgba(var(--color-white), var(--tw-bg-opacity));
     --tw-bg-opacity: 1;
-    border-bottom-width: 0px;
     --tw-text-opacity: 1;
     color: rgba(var(--color-black), var(--tw-text-opacity));
   }
@@ -52,10 +52,10 @@
   }
 
 .tabs.primary .is-active a {
+    border-bottom-width: 0px;
     --tw-bg-opacity: 1;
     background-color: rgba(var(--color-white), var(--tw-bg-opacity));
     --tw-bg-opacity: 1;
-    border-bottom-width: 0px;
     --tw-text-opacity: 1;
     color: rgba(var(--color-black), var(--tw-text-opacity));
   }
@@ -70,25 +70,25 @@
 }
 
 .tabs.secondary li {
+    margin-top: 0.5rem;
+    margin-right: 0px;
+    margin-bottom: 0.25rem;
+    margin-left: 1rem;
     display: inline-block;
     font-size: 0.875rem;
     line-height: 1.25rem;
-    margin-right: 0px;
-    margin-bottom: 0.25rem;
-    margin-top: 0.5rem;
-    margin-left: 1rem;
   }
 
 .tabs.secondary a {
-    background-color: transparent;
+    display: block;
+    border-bottom-width: 2px;
     --tw-border-opacity: 1;
     border-color: rgba(var(--color-gray), var(--tw-border-opacity));
-    border-bottom-width: 2px;
-    display: block;
+    background-color: transparent;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
-    padding-bottom: 0.25rem;
     padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
     --tw-text-opacity: 1;
     color: rgba(var(--color-black), var(--tw-text-opacity));
   }
@@ -103,9 +103,9 @@
   }
 
 .tabs.secondary .is-active a, .tabs.secondary a:focus, .tabs.secondary a:hover {
-    background-color: transparent;
     --tw-border-opacity: 1;
     border-color: rgba(var(--color-black), var(--tw-border-opacity));
+    background-color: transparent;
     --tw-text-opacity: 1;
     color: rgba(var(--color-black), var(--tw-text-opacity));
   }

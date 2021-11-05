@@ -1,0 +1,37 @@
+{
+  "menu_name": "main_navigation",
+  "icons": {
+    "open": "star"
+  },
+  "menu_level": 0,
+  "items": [
+    {
+      "title": "Home",
+      "url": "#",
+      "attributes": ""
+    },
+    {
+      "title": "About",
+      "url": "#",
+      "attributes": ""
+    },
+    {
+      "title": "Products",
+      "url": "#",
+      "attributes": "",
+      "menu_level": 1,
+      "below": [
+        {
+          "title": "Product 1",
+          "url": "#",
+          "attributes": ""
+        },
+        {
+          "title": "Product 2",
+          "url": "#",
+          "attributes": ""
+        }
+      ]
+    }
+  ]
+}

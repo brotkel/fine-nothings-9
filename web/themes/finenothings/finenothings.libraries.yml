@@ -91,7 +91,6 @@ tag:
 code:
   css:
     component:
-      
 
 sunrise:
   css:
@@ -106,3 +105,8 @@ sunrise:
 social-icons:
   css:
     component:
+
+hamburger:
+  css:
+    component:
+      dist/css/hamburger.css: {}
