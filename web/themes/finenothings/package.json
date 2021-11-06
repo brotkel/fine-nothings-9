@@ -48,7 +48,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-stylelint": "^11.0.0",
-    "postcss": "^8.2.15",
+    "postcss": "^8.3.10",
     "postcss-cli": "^8.3.0",
     "postcss-import": "^14.0.2",
     "postcss-nested": "^5.0.5",

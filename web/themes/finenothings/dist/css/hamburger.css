@@ -1,17 +1,5 @@
 .hamburger > ul ul a {
-  padding-left: 1.5rem;
-}
-
-.hamburger > input:checked ~ ul {
-  display: block;
-}
-
-.hamburger > input:checked ~ .closed {
-  display: none;
-}
-
-.hamburger > input:checked ~ .open {
-  display: block;
+    padding-left: 1.5rem
 }
 
 /*# sourceMappingURL=hamburger.css.map */

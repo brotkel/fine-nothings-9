@@ -110,3 +110,8 @@ hamburger:
   css:
     component:
       dist/css/hamburger.css: {}
+
+toggle:
+  css:
+    component:
+      dist/css/toggle.css: {}

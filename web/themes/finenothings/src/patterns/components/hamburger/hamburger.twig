@@ -28,14 +28,14 @@
 {% set icons = { "closed": icons.closed ? icons.closed : "hamburger", "open": icons.open ? icons.open : "hamburger" }  %}
 
 <div class="hamburger inline-block relative select-none text-black z-10">
-  <input type="checkbox" class="absolute block cursor-pointer h-7 left-2 opacity-0 w-9 z-30" />
+  <input type="checkbox" class="absolute block cursor-pointer h-7 left-2 opacity-0 peer w-9 z-30" />
   
   {%
     include '@finenothings/icons/icons.twig' with {
       "icon": icons.closed,
       "extra_attributes": attributes|without(class),
       "modifier_mapping": {
-        "list": "closed bg-paperwhite bg-gradient-to-b border border-black border-opacity-20 left-2 px-2 py-1 relative z-20",
+        "list": "closed bg-paperwhite bg-gradient-to-b border border-black border-opacity-20 left-2 px-2 py-1 relative z-20 peer-checked:hidden",
         "icon": "w-4 h-4",
       }
     } only
@@ -45,7 +45,7 @@
       "icon": icons.open,
       "extra_attributes": attributes|without(class),
       "modifier_mapping": {
-        "list": "open bg-paperwhite bg-gradient-to-b from-white border border-black border-opacity-20 hidden left-2 px-2 py-1 relative z-20 shadow-inner",
+        "list": "open bg-paperwhite bg-gradient-to-b from-white border border-black border-opacity-20 hidden left-2 px-2 py-1 relative z-20 shadow-inner peer-checked:block",
         "icon": "w-4 h-4",
       }
     } only
@@ -58,7 +58,7 @@
   {% import _self as menus %}
     {% if items %}
       {% if menu_level == 0 %}
-        <ul class="absolute bg-paperwhite list-none hidden -my-8 pt-10 pb-2 shadow z-10">
+        <ul class="absolute bg-paperwhite list-none hidden -my-8 pt-10 pb-2 shadow z-10 peer-checked:block">
       {% else %}
         <ul class="list-none">
       {% endif %}

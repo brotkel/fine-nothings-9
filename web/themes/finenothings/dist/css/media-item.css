@@ -1,20 +1,28 @@
 .media-item__image img {
-    display: block;
-  }
+
+    display: block
+}
 
 .media-item__caption {
-  margin-top: 0.5rem;
-  max-width: 100%;
-  overflow-wrap: break-word;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+
+    margin-top: 0.5rem;
+
+    max-width: 100%;
+
+    overflow-wrap: break-word;
+
+    font-size: 0.875rem;
+
+    line-height: 1.25rem
 }
 
 /* Responsive styles for YouTube video embed. */
 
 .media-item__responsive-video {
-  height: 0px;
-  overflow: hidden;
+
+    height: 0px;
+
+    overflow: hidden
 }
 
 /*# sourceMappingURL=media-item.css.map */

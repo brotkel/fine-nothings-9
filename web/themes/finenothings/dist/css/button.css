@@ -23,16 +23,22 @@
 }
 
 .button:hover, .button:active {
-    --tw-bg-opacity: 1;
-    background-color: rgba(var(--color-night), var(--tw-bg-opacity));
-    --tw-text-opacity: 1;
-    color: rgba(var(--color-white), var(--tw-text-opacity));
-  }
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--color-night), var(--tw-bg-opacity));
+}
+
+.button:hover, .button:active {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-white), var(--tw-text-opacity));
+}
 
 .button:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
+  cursor: not-allowed;
+}
+
+.button:disabled {
+  opacity: 0.5;
+}
 
 .button--primary {
   border-radius: 0.125rem;
@@ -49,17 +55,38 @@
 }
 
 .button--primary:hover, .button--primary:active {
-    border-width: 2px;
-    --tw-border-opacity: 1;
-    border-color: rgba(var(--color-gray), var(--tw-border-opacity));
-    --tw-border-opacity: 0.5;
-    --tw-bg-opacity: 1;
-    background-color: rgba(var(--color-white), var(--tw-bg-opacity));
-    --tw-bg-opacity: 0.8;
-    --tw-text-opacity: 1;
-    color: rgba(var(--color-gray), var(--tw-text-opacity));
-    --tw-text-opacity: 0.5;
-    text-decoration: none;
-  }
+  border-width: 2px;
+}
+
+.button--primary:hover, .button--primary:active {
+  --tw-border-opacity: 1;
+  border-color: rgba(var(--color-gray), var(--tw-border-opacity));
+}
+
+.button--primary:hover, .button--primary:active {
+  --tw-border-opacity: 0.5;
+}
+
+.button--primary:hover, .button--primary:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--color-white), var(--tw-bg-opacity));
+}
+
+.button--primary:hover, .button--primary:active {
+  --tw-bg-opacity: 0.8;
+}
+
+.button--primary:hover, .button--primary:active {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-gray), var(--tw-text-opacity));
+}
+
+.button--primary:hover, .button--primary:active {
+  --tw-text-opacity: 0.5;
+}
+
+.button--primary:hover, .button--primary:active {
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=button.css.map */

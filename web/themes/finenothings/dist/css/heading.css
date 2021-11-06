@@ -1,9 +1,13 @@
 .heading__link {
-  color: currentColor;
-  text-decoration: none;
+
+    color: currentColor;
+
+    text-decoration: none;
 }
+
   .heading__link:hover {
+
     text-decoration: underline;
-  }
+}
 
 /*# sourceMappingURL=heading.css.map */

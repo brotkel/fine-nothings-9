@@ -1,25 +1,31 @@
 .card__media img {
+
     width: 100%;
-  }
+}
 
 /* Styles for Wide variation of Card */
 
 .card--wide {
-  display: flex;
-  flex-direction: column;
+
+    display: flex;
+
+    flex-direction: column;
 }
 
 .card--wide .card__media {
+
     flex: 1 1 0%;
-  }
+}
 
 .card--wide .card__content {
+
     flex: 1 1 0%;
-  }
+}
 
 .card--wide .card__eyebrow {
+
     margin-top: 0px;
-  }
+}
 
 
 /*# sourceMappingURL=card.css.map */

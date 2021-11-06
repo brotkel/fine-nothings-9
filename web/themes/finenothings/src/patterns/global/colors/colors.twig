@@ -12,7 +12,7 @@
 {% for title, section in sections %}
   <h3>{{ title }}</h3>
   {% for color in section %}
-    <div class="pl-swatch bg-{{ color.name }}">
+    <div class="pl-swatch {{ color.class }}">
       <div class="pl-swatch__hex uppercase">{{ color.name }}<br>{{ color.hex }}</div>
     </div>
   {% endfor %}

@@ -1,0 +1,17 @@
+{{ attach_library('finenothings/toggle') }}
+
+<fieldset class="toggle inline-block relative">
+  <input id="{{ id }}" type="checkbox" class="toggle-input 
+    hidden peer
+  " />
+  <label for="{{ id }}" class="toggle-label
+    block text-transparent select-none w-12 h-6
+    before:block after:block before:absolute after:absolute before:pointer after:pointer
+    before:w-full before:h-full before:bg-gray before:rounded-full before:transition-color
+    after:top-0 after:left-0 after:w-6 after:h-6 after:bg-white after:rounded-1/2 after:shadow-sm after:transition-all
+    peer-checked:before:bg-mint 
+    peer-checked:after:left-6  peer-checked:after:bg-gradient-to-b from-yellow to-pink peer-checked:after:shadow-glow-pink
+  ">
+    {{ label }}
+  </label>
+</fieldset>

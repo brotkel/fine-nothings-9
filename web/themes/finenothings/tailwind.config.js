@@ -13,7 +13,10 @@ const colorFn = cssVariable => {
 };
 
 module.exports = {
-  purge: [],
+  mode: 'jit',
+  purge: [
+    './src/**/*.{html,twig,php,js,css,json}'
+  ],
   darkMode: 'class',
   theme: {
     colors: {
@@ -40,19 +43,13 @@ module.exports = {
       mono: ['Roboto Mono Flex', 'Roboto Mono', 'ui-monospace', 'monospace'],
     },
     extend: {
+      borderRadius: {
+        ['1/2']: '50%',
+      },
       boxShadow: {
         cover: 'inset 0px -10px 10px 0 rgba(0, 0, 0, .1)',
+        ['glow-pink']: '0px 0px 8px 5px rgba(var(--color-pink), .5)',
       }
-    },
-  },
-  variants: {
-    extend: {
-      brightness: ['group-focus', 'focus', 'group-hover', 'hover'],
-      filter: ['group-focus', 'focus', 'group-hover', 'hover'],
-      fontFamily: ['dark'],
-      sepia: ['group-focus', 'focus', 'group-hover', 'hover'],
-      transform: ['group-focus', 'focus', 'group-hover', 'hover'],
-      translate: ['group-focus', 'focus', 'group-hover', 'hover'],
     },
   },
   plugins: [

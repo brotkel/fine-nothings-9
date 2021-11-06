@@ -3,62 +3,76 @@
     "Primary": [
       {
         "name": "red",
+        "class": "bg-red",
         "hex": "#f97e72"
       },
       {
         "name": "orange",
+        "class": "bg-orange",
         "hex": "#d18616"
       },
       {
         "name": "yellow",
+        "class": "bg-yellow",
         "hex": "#fede5d"
       },
       {
         "name": "mint",
+        "class": "bg-mint",
         "hex": "#72f1b8"
       },
       {
         "name": "teal",
+        "class": "bg-teal",
         "hex": "#36f9f6"
       },
       {
         "name": "magenta",
+        "class": "bg-magenta",
         "hex": "#880088"
       },
       {
         "name": "pink",
+        "class": "bg-pink",
         "hex": "#ff7eda"
       },
       {
         "name": "maroon",
+        "class": "bg-maroon",
         "hex": "#5f3337"
       }
     ],
     "Black &amp; White": [
       {
         "name": "black",
+        "class": "bg-black",
         "hex": "#000000"
       },
       {
         "name": "white",
+        "class": "bg-white",
         "hex": "#FFFFFF"
       }
     ],
     "Grays": [
       {
         "name": "gray",
+        "class": "bg-gray",
         "hex": "#888888"
       },
       {
         "name": "sky",
+        "class": "bg-sky",
         "hex": "#848bbd"
       },
       {
         "name": "night",
+        "class": "bg-night",
         "hex": "#241b2f"
       },
       {
         "name": "paperwhite",
+        "class": "bg-paperwhite",
         "hex": "#ffffffee"
       }
     ]
