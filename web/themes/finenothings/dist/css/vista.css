@@ -50,24 +50,24 @@
           animation: fadeIn 1s ease-in forwards;
 }
 
-.vista #Path {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+.vista.animate #Path {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
 }
 
-.vista #Path-1 {
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
-}
-
-.vista #Path-2 {
+.vista.animate #Path-1 {
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
 
-.vista #Path-3 {
-  -webkit-animation-delay: 3.5s;
-          animation-delay: 3.5s;
+.vista.animate #Path-2 {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.vista.animate #Path-3 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 /*# sourceMappingURL=vista.css.map */

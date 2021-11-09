@@ -36,18 +36,18 @@
   animation: fadeIn 1s ease-in forwards;
 }
 
-.vista #Path {
-  animation-delay: 2s;
+.vista.animate #Path {
+  animation-delay: 3.5s;
 }
 
-.vista #Path-1 {
-  animation-delay: 2.5s;
-}
-
-.vista #Path-2 {
+.vista.animate #Path-1 {
   animation-delay: 3s;
 }
 
-.vista #Path-3 {
-  animation-delay: 3.5s;
+.vista.animate #Path-2 {
+  animation-delay: 2.5s;
+}
+
+.vista.animate #Path-3 {
+  animation-delay: 2s;
 }
