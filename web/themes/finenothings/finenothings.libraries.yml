@@ -115,3 +115,8 @@ toggle:
   css:
     component:
       dist/css/toggle.css: {}
+
+logo:
+  css:
+    component:
+      dist/css/logo.css: {}

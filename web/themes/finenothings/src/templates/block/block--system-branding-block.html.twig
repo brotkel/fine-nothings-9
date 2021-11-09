@@ -24,15 +24,19 @@
     {% endif %}
   </div>
   <div class="flex justify-center">
-    {% if site_logo %}
+    {% if site_name %}
       <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="site-logo mr-2">
-        <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
+          {%
+            include "@finenothings/logo/logo.twig" with {
+              animate: true,
+            } only
+          %}
       </a>
     {% endif %}
-    {% if site_name %}
+    {# {% if site_name %}
       <div class="site-name font-serif p-4 text-8xl text-maroon text-opacity-90">
         <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
       </div>
-    {% endif %}   
+    {% endif %}    #}
   </div>
 </div>

@@ -13,7 +13,10 @@
  */
 #}
 {% if content %}
-  <div{{ attributes.addClass("bg-maroon border-b border-paperwhite border-opacity-50 border-dashed text-paperwhite") }}>
+  <div{{ attributes.addClass("
+    bg-maroon border-b border-paperwhite border-opacity-50 border-dashed text-paperwhite
+    dark:bg-gradient-to-b from-black to-night dark:border-0 dark:text-mint  
+  ") }}>
     <div class="container flex items-center justify-between mx-auto py-2">
       {{ content }}
     </div>
