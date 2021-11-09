@@ -120,3 +120,8 @@ logo:
   css:
     component:
       dist/css/logo.css: {}
+
+vista:
+  css:
+    component:
+      dist/css/vista.css: {}

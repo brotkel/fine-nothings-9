@@ -8,7 +8,7 @@
 @keyframes stokeFill {
 
   to {
-    fill: #000;
+    fill: rgb(var(--color-maroon));
     fill-opacity: 1;
     stroke: transparent;
   }

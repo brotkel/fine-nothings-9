@@ -986,6 +986,9 @@ input {
 .w-12 {
   width: 3rem;
 }
+.min-w-\[768px\] {
+  min-width: 768px;
+}
 .max-w-full {
   max-width: 100%;
 }
@@ -1428,6 +1431,9 @@ input {
 .opacity-0 {
   opacity: 0;
 }
+.opacity-25 {
+  opacity: 0.25;
+}
 .shadow-cover {
   --tw-shadow: inset 0px -10px 10px 0 rgba(0, 0, 0, .1);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -1636,6 +1642,9 @@ input {
 .dark .dark\:text-white {
   --tw-text-opacity: 1;
   color: rgba(var(--color-white), var(--tw-text-opacity));
+}
+.dark .dark\:opacity-100 {
+  opacity: 1;
 }
 @media (min-width: 768px) {
   .md\:flex {

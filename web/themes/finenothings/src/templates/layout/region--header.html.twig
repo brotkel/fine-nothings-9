@@ -13,6 +13,11 @@
  */
 #}
 {% if content %}
+  {%
+    include "@finenothings/vista/vista.twig" with {
+      animate: true,
+    } only
+  %}
   <div{{ attributes.addClass("container mx-auto") }}>
     {{ content }}
   </div>

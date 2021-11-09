@@ -1,0 +1,73 @@
+@-webkit-keyframes fadeIn {
+
+  from {
+    stroke-opacity: 0;
+    fill-opacity: 0;
+  }
+
+  to {
+    stroke-opacity: 0.5;
+    fill-opacity: 0.1;
+  }
+}
+
+@keyframes fadeIn {
+
+  from {
+    stroke-opacity: 0;
+    fill-opacity: 0;
+  }
+
+  to {
+    stroke-opacity: 0.5;
+    fill-opacity: 0.1;
+  }
+}
+
+.vista #Path,
+.vista #Path-1,
+.vista #Path-2,
+.vista #Path-3 {
+  fill: rgb(var(--color-maroon));
+  stroke: rgb(var(--color-maroon));
+}
+
+.dark .vista #Path,
+.dark .vista #Path-1,
+.dark .vista #Path-2,
+.dark .vista #Path-3 {
+  fill: rgb(var(--color-sky));
+  stroke: rgb(var(--color-teal));
+}
+
+.vista.animate #Path,
+.vista.animate #Path-1,
+.vista.animate #Path-2,
+.vista.animate #Path-3 {
+  stroke-opacity: 0;
+  fill-opacity: 0;
+  -webkit-animation: fadeIn 1s ease-in forwards;
+          animation: fadeIn 1s ease-in forwards;
+}
+
+.vista #Path {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.vista #Path-1 {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.vista #Path-2 {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.vista #Path-3 {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+/*# sourceMappingURL=vista.css.map */
