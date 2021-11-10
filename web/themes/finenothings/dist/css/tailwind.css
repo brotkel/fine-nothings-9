@@ -1573,6 +1573,20 @@ input {
 .focus\:opacity-5:focus {
   opacity: 0.05;
 }
+.hover\:focus\:border-b-0:hover:focus {
+  border-bottom-width: 0px;
+}
+.hover\:focus\:bg-white:hover:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--color-white), var(--tw-bg-opacity));
+}
+.hover\:focus\:bg-opacity-100:hover:focus {
+  --tw-bg-opacity: 1;
+}
+.hover\:focus\:text-black:hover:focus {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-black), var(--tw-text-opacity));
+}
 .group:hover .group-hover\:-translate-x-1\/2 {
   --tw-translate-x: -50%;
   transform: var(--tw-transform);
@@ -1645,6 +1659,14 @@ input {
 }
 .dark .dark\:opacity-100 {
   opacity: 1;
+}
+.hover\:focus\:dark:hover:focus .hover\:focus\:dark\:bg-black:hover:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--color-black), var(--tw-bg-opacity));
+}
+.hover\:focus\:dark:hover:focus .hover\:focus\:dark\:text-white:hover:focus {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-white), var(--tw-text-opacity));
 }
 @media (min-width: 768px) {
   .md\:flex {

@@ -2,11 +2,15 @@
 
 {% if primary %}
   <h2 class="sr-only">{{ 'Primary tabs'|t }}</h2>
-  <ul class="tabs primary">
+  <ul class="tabs primary flex flex-wrap list-none m-0 p-0 py-6 relative">
     {% block primary %}
       {% for tab in tabs %}
-        <li class="{{ is_active ? 'is-active' }}">
-          <a href="{{ tab.link }}">{{ tab.text }}</a>
+        <li class="{{ is_active ? 'is-active' }} block font-bold mb-2 p-0 text-sm">
+          <a href="{{ tab.link }}" class="
+            block bg-gray bg-opacity-30 border border-gray px-6 py-2 no-underline
+            focus:hover:bg-white dark:focus:hover:bg-black focus:hover:bg-opacity-100 focus:hover:border-b-0 focus:hover:text-black dark:focus:hover:text-white
+            {{ is_active ? 'bg-white bg-opacity-100 border-b-0 text-black dark:text-white' }} 
+          ">{{ tab.text }}</a>
         </li>
       {% endfor %}
     {% endblock primary %}
@@ -14,11 +18,15 @@
 {% endif %}
 {% if secondary %}
   <h2 class="sr-only">{{ 'Secondary tabs'|t }}</h2>
-  <ul class="tabs secondary">
+  <ul class="tabs secondary flex flex-wrap list-none m-0  mt-2 py-6 relative">
     {% block secondary %}
       {% for tab in tabs %}
-        <li class="{{is_active ? 'is-active' }}">
-          <a href="{{ tab.link }}">{{ tab.text }}</a>
+        <li class="{{is_active ? 'is-active' }} inline-block text-sm mt-2 ml-4 mb-1 mr-0">
+          <a href="{{ tab.link }}" class="
+            block bg-transparent border-b-2 border-gray text-black dark:text-white text-opacity-50 pt-2 px-3 pb-1
+            focus:hover:bg-transparent focus:hover:border-black focus:hover:text-black dark:focus:hover:text-white no-underline
+            {{ is_active ? 'bg-transparent border-black text-black dark:text-white no-underline' }}
+          ">{{ tab.text }}</a>
         </li>
       {% endfor %}
     {% endblock secondary %}

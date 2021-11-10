@@ -1,7 +1,7 @@
 {
   "title" : "Pattern Lab",
   "htmlClass": "pl",
-  "bodyClass": "body font-sans dark:font-mono",
+  "bodyClass": "body font-sans dark:bg-night dark:font-mono",
   "modifier": "",
   "extra_attributes": "",
   "img": {

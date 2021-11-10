@@ -10,7 +10,7 @@
     "full": false,
     "random": false,
     "disco": false,
-    "hay": true,
+    "hay": false,
     "mqs": false,
     "find": false,
     "views-all": false,
@@ -45,6 +45,16 @@
       800,
       2600
     ]
+  },
+  "plugins": {
+    "patternlab-plugin-darkmode": {
+      "enabled": true,
+      "initialized": false,
+      "options": {
+        "className": "dark",
+        "targetElement": "html"
+      }
+    }
   },
   "logLevel": "info",
   "outputFileSuffixes": {
