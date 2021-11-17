@@ -1,0 +1,217 @@
+diff --git a/composer.json b/composer.json
+index 11d849f..cd864da 100644
+--- a/composer.json
++++ b/composer.json
+@@ -2,19 +2,12 @@
+     "name": "dark_mode_switch",
+     "type": "drupal-module",
+     "description": "Create a switch block to turn the site into a darker version.",
+-    "author": [
+-      {
+-        "name": "Rudá Maia",
+-        "email": "rudamaia@gmail.com",
+-        "homepage": "http://drupaloid.dev",
+-      }
+-    ],
+     "keywords": [
+     ],
+     "homepage": "https://www.drupal.org/project/dark_mode_switch",
+     "minimum-stability": "dev",
+     "support": {
+         "issues": "https://www.drupal.org/project/issues/dark_mode_switch",
+-        "source": "http://cgit.drupalcode.org/dark_mode_switch",
+-    },
++        "source": "http://cgit.drupalcode.org/dark_mode_switch"
++    }
+ }
+diff --git a/config/install/dark_mode_switch.settings.yml b/config/install/dark_mode_switch.settings.yml
+new file mode 100644
+index 0000000..47ad58b
+--- /dev/null
++++ b/config/install/dark_mode_switch.settings.yml
+@@ -0,0 +1,2 @@
++dark_class: 'dark-mode'
++parent_element: 'body'
+\ No newline at end of file
+diff --git a/dark_mode_switch.info.yml b/dark_mode_switch.info.yml
+index df4b8e7..5595ad4 100644
+--- a/dark_mode_switch.info.yml
++++ b/dark_mode_switch.info.yml
+@@ -2,4 +2,6 @@ name: 'Dark Mode Switch'
+ type: module
+ description: 'Create a switch block to turn the theme into a dark version.'
+ core: 8.x
++core_version_requirement: ^8 || ^9
+ package: 'Other'
++configure: dark_mode_switch.form
+diff --git a/dark_mode_switch.libraries.yml b/dark_mode_switch.libraries.yml
+index fd93609..afc85b3 100644
+--- a/dark_mode_switch.libraries.yml
++++ b/dark_mode_switch.libraries.yml
+@@ -2,4 +2,7 @@ dark_mode_switch:
+   js:
+     js/dark_mode_switch.js: {}
+   dependencies:
++    - core/jquery
+     - core/jquery.cookie
++    - core/jquery.once
++    - core/drupalSettings
+diff --git a/dark_mode_switch.links.menu.yml b/dark_mode_switch.links.menu.yml
+new file mode 100644
+index 0000000..72c47a3
+--- /dev/null
++++ b/dark_mode_switch.links.menu.yml
+@@ -0,0 +1,5 @@
++dark_mode_switch.form:
++  title: 'Dark Mode Switch settings'
++  description: 'Configure behavior for the Dark Mode Switch'
++  route_name: dark_mode_switch.form
++  parent: 'system.admin_config_development'
+\ No newline at end of file
+diff --git a/dark_mode_switch.routing.yml b/dark_mode_switch.routing.yml
+new file mode 100644
+index 0000000..53d6d13
+--- /dev/null
++++ b/dark_mode_switch.routing.yml
+@@ -0,0 +1,7 @@
++dark_mode_switch.form:
++  path: '/admin/config/development/dark_mode_switch'
++  defaults:
++    _form: '\Drupal\dark_mode_switch\Form\DarkModeSwitchSettings'
++    _title: 'Dark Mode Switch settings'
++  requirements:
++    _permission: 'administer site configuration'
+\ No newline at end of file
+diff --git a/js/dark_mode_switch.js b/js/dark_mode_switch.js
+index 669f3ca..6ea1aa3 100644
+--- a/js/dark_mode_switch.js
++++ b/js/dark_mode_switch.js
+@@ -1,18 +1,25 @@
+-(function ($, Drupal) {
++(function ($, Drupal, drupalSettings) {
+   Drupal.behaviors.dark_mode_switch= {
+     attach: function (context, settings) {
+       // be sure this is executed only once, on page load
+       if (context === document) {
+         // Check Dark Mode Switch Cookie.
++        const darkClass = drupalSettings.dark_mode_switch.dark_class;
++        const parentElement = drupalSettings.dark_mode_switch.parent_element;
++
+         $(context).find('#dark-mode-switch').once('dark_mode_switch').each(function () {
+-          var darkmodestate = ($.cookie('darkmodeswitch') === undefined) ? false : JSON.parse($.cookie('darkmodeswitch'));
+-          $('body').toggleClass('darkmode', darkmodestate);
++          var darkmodestate = window.matchMedia('(prefers-color-scheme: dark)').matches;
++          if ('theme' in localStorage) {
++            darkmodestate = (localStorage.theme === 'false') ? false : true;
++          }
++          localStorage.theme = darkmodestate;
++          $(parentElement).toggleClass(darkClass, darkmodestate);
+           $('#dark-mode-switch').prop("checked", darkmodestate);
+         });
+         // Toggle Dark Mode Switch.
+         $('#dark-mode-switch').change(function () {
+-          $('body').toggleClass('darkmode');
+-          $.cookie('darkmodeswitch', $(this).is( ":checked" ), { expires: 365, path: '/' });
++          $(parentElement).toggleClass(darkClass);
++          localStorage.theme = $(this).prop("checked");
+         });
+       }
+     }
+diff --git a/src/Form/DarkModeSwitchSettings.php b/src/Form/DarkModeSwitchSettings.php
+new file mode 100644
+index 0000000..982d6c7
+--- /dev/null
++++ b/src/Form/DarkModeSwitchSettings.php
+@@ -0,0 +1,63 @@
++<?php
++
++namespace Drupal\dark_mode_switch\Form;
++
++use Drupal\Core\Form\ConfigFormBase;
++use Drupal\Core\Form\FormStateInterface;
++
++class DarkModeSwitchSettings extends ConfigFormBase {
++
++  /**
++   * {@inheritdoc}
++   */
++
++  protected function getEditableConfigNames() {
++    return [
++      'dark_mode_switch.settings',
++    ];
++  }
++
++  public function getFormId() {
++    return 'dark_mode_switch_form';
++  }
++
++  public function buildForm(array $form, FormStateInterface $form_state) {
++    $config = $this->config('dark_mode_switch.settings');
++
++    $form = [];
++
++    $form['dark_class'] = [
++        '#type' => 'textfield',
++        '#title' => $this->t('Dark mode classname to append'),
++        '#description' => $this->t('Enter the classname to append to the parent element when dark mode is enabled.'),
++        '#required' => TRUE,
++        '#default_value' => $config->get('dark_class'),
++    ];
++
++    $form['parent_element'] = [
++        '#type' => 'textfield',
++        '#title' => $this->t('Parent element to bind to'),
++        '#description' => $this->t('The jQuery element selector you want the dark mode class to appear on. This could be an element, like body or html, or a class selector like .content.'),
++        '#required' => TRUE,
++        '#default_value' => $config->get('parent_element'),
++    ];
++
++    $form['actions']['#type'] = 'actions';
++    $form['actions']['submit'] = [
++        '#type' => 'submit',
++        '#value' => $this->t('Save configuration'),
++        '#button_type' => 'primary',
++    ];
++
++    return $form;
++  }
++
++  public function submitForm(array &$form, FormStateInterface $form_state) {
++    parent::submitForm($form, $form_state);
++
++    $this->config('dark_mode_switch.settings')->set('dark_class', $form_state->getValue('dark_class'))->set('parent_element', $form_state->getValue('parent_element'))->save();
++
++    $messenger = \Drupal::service('messenger');
++    $messenger->addMessage($this->t('Configuration saved.'));
++  }
++}
+diff --git a/src/Plugin/Block/DarkModeSwitch.php b/src/Plugin/Block/DarkModeSwitch.php
+index 857f67d..35d53b9 100644
+--- a/src/Plugin/Block/DarkModeSwitch.php
++++ b/src/Plugin/Block/DarkModeSwitch.php
+@@ -19,15 +19,14 @@ class DarkModeSwitch extends BlockBase {
+    * {@inheritdoc}
+    */
+   public function build() {
+-    return [
+-      '#theme' => 'dark_mode_switch_block',
+-      '#attached' => array(
+-        'library' => array(
+-          'dark_mode_switch/dark_mode_switch',
+-        ),
+-      ),
+-    ];
+-  }
+-
++    $dark_class = \Drupal::config('dark_mode_switch.settings')->get('dark_class');
++    $parent_element = \Drupal::config('dark_mode_switch.settings')->get('parent_element');
++    
++    $form['#theme'] = 'dark_mode_switch_block';
++    $form['#attached']['library'][] = 'dark_mode_switch/dark_mode_switch';
++    $form['#attached']['drupalSettings']['dark_mode_switch']['dark_class'] = $dark_class;
++    $form['#attached']['drupalSettings']['dark_mode_switch']['parent_element'] = $parent_element;
+ 
++    return $form;
++  }
+ }

@@ -8,27 +8,27 @@
 @layer base {
 
   h1 {
-    @apply font-bold font-serif text-4xl;
+    @apply font-bold font-serif text-4xl dark:font-mono;
   }
 
   h2 {
-    @apply font-bold font-serif text-2xl;
+    @apply font-bold font-serif text-2xl dark:font-mono;
   }
 
   h3 {
-    @apply font-serif text-xl;
+    @apply font-serif text-xl dark:font-mono;
   }
 
   h4 {
-    @apply font-bold font-serif text-lg;
+    @apply font-bold font-serif text-lg dark:font-mono;
   }
 
   h5 {
-    @apply italic font-serif text-lg;
+    @apply italic font-serif text-lg dark:font-mono;
   }
 
   h6 {
-    @apply font-serif;
+    @apply font-serif dark:font-mono;
   }
 
   mark {
