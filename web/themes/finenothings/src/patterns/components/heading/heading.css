@@ -1,7 +1,0 @@
-.heading__link {
-  @apply text-current no-underline;
-
-  &:hover {
-    @apply underline;
-  }
-}

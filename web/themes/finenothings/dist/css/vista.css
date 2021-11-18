@@ -1,6 +1,28 @@
 @-webkit-keyframes fadeIn {
 
   from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.33;
+  }
+}
+
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.33;
+  }
+}
+
+@-webkit-keyframes fadeInSvg {
+
+  from {
     stroke-opacity: 0;
     fill-opacity: 0;
   }
@@ -11,7 +33,7 @@
   }
 }
 
-@keyframes fadeIn {
+@keyframes fadeInSvg {
 
   from {
     stroke-opacity: 0;
@@ -46,8 +68,8 @@
 .vista.animate #Path-3 {
   stroke-opacity: 0;
   fill-opacity: 0;
-  -webkit-animation: fadeIn 1s ease-in forwards;
-          animation: fadeIn 1s ease-in forwards;
+  -webkit-animation: fadeInSvg 1s ease-in forwards;
+          animation: fadeInSvg 1s ease-in forwards;
 }
 
 .vista.animate #Path {
@@ -68,6 +90,14 @@
 .vista.animate #Path-3 {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
+}
+
+.vistaBottom.animate {
+  opacity: 0;
+  -webkit-animation: fadeIn 1s ease-in forwards;
+          animation: fadeIn 1s ease-in forwards;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
 }
 
 /*# sourceMappingURL=vista.css.map */

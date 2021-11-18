@@ -61,12 +61,17 @@
     attach: function attach(context) {
       var $sunrise = $('.sunrise', context);
       var $sunriseContainer = $('.sunriseContainer')[0];
-      $(window).scroll(function () {
-        var scroll = 100 * (($sunriseContainer.getBoundingClientRect().top - 100) / window.innerHeight);
-        var position = Math.min(Math.max(parseInt(scroll * 4), 0), 100); //console.log($sunriseContainer.getBoundingClientRect().top);
-        //console.log(`scroll ${scroll} pos ${position}`);
 
+      var setPos = function setPos() {
+        var scroll = 100 * (($sunriseContainer.getBoundingClientRect().top - (Math.max(window.innerHeight / 3), 250)) / window.innerHeight);
+        var position = Math.min(Math.max(parseInt(scroll * 5), 0), 100);
+        console.log(window.innerHeight / 4);
+        console.log("scroll ".concat(scroll, " pos ").concat(position));
         $sunrise.css('transform', 'translateY(' + position + '%)');
+      };
+
+      $(window).scroll(function () {
+        setPos();
       });
     }
   };

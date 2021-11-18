@@ -84,3 +84,10 @@
   padding: 15px;
   background-color: rgba(0, 0, 0, 0.25);
 }
+
+/* Dark mode overrides */
+.dark .pl-c-category__title,
+.dark .pl-c-category__description,
+.dark .pl-c-pattern__title {
+  color: rgb(var(--color-white)) !important;
+}

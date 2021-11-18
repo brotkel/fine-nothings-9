@@ -35,8 +35,8 @@
       "icon": icons.closed,
       "extra_attributes": attributes|without(class),
       "modifier_mapping": {
-        "list": "closed bg-paperwhite bg-gradient-to-b border border-black border-opacity-20 left-2 px-2 py-1 relative z-20 peer-checked:hidden",
-        "icon": "w-4 h-4",
+        "list": "closed bg-gradient-to-b from-white dark:from-night to-transparent border border-black dark:border-mint border-opacity-20 left-2 opacity-75 hover:focus:opacity-100 px-2 py-1 relative text-black dark:text-mint z-20 peer-checked:hidden",
+        "icon": "w-4 h-4 fill-current",
       }
     } only
   %}
@@ -45,8 +45,8 @@
       "icon": icons.open,
       "extra_attributes": attributes|without(class),
       "modifier_mapping": {
-        "list": "open bg-paperwhite bg-gradient-to-b from-white border border-black border-opacity-20 hidden left-2 px-2 py-1 relative z-20 shadow-inner peer-checked:block",
-        "icon": "w-4 h-4",
+        "list": "open bg-gradient-to-b from-white dark:from-night to-transparent border border-black dark:border-mint border-opacity-20 hidden left-2 opacity-75 hover:focus:opacity-100 px-2 py-1 relative shadow-inner text-black dark:text-mint z-20 peer-checked:block",
+        "icon": "w-4 h-4 fill-current",
       }
     } only
   %}
@@ -58,13 +58,13 @@
   {% import _self as menus %}
     {% if items %}
       {% if menu_level == 0 %}
-        <ul class="absolute bg-paperwhite list-none hidden -my-8 pt-10 pb-2 shadow z-10 peer-checked:block">
+        <ul class="absolute bg-paperwhite dark:bg-sky dark:bg-opacity-10 dark:border-2 dark:border-mint dark:border-opacity-75 hidden list-none -my-8 pt-10 pb-2 shadow dark:shadow-glow-mint z-10 peer-checked:block">
       {% else %}
         <ul class="list-none">
       {% endif %}
       {% for item in items %}
         <li{{ item.attributes }}>
-          <a href="{{ item.url }}" class="block bg-black bg-opacity-0 whitespace-nowrap transition-colors px-4 hover:bg-opacity-10 py-2">
+          <a href="{{ item.url }}" class="block bg-black dark:bg-sky bg-opacity-0 dark:bg-opacity-0 hover:bg-opacity-10 dark:hover:bg-opacity-20 px-4 py-2 transition-colors text-black dark:text-white whitespace-nowrap">
             {{ item.title }}
           </a>
           {% if item.below %}

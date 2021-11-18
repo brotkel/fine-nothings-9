@@ -15,15 +15,20 @@
       const $sunrise = $('.sunrise', context);
       const $sunriseContainer = $('.sunriseContainer')[0];
 
-      $(window).scroll(function() {
+      const setPos = () => {
         const scroll =
           100 *
-          (($sunriseContainer.getBoundingClientRect().top - 100) /
+          (($sunriseContainer.getBoundingClientRect().top -
+            (Math.max(window.innerHeight / 3), 250)) /
             window.innerHeight);
-        const position = Math.min(Math.max(parseInt(scroll * 4), 0), 100);
-        //console.log($sunriseContainer.getBoundingClientRect().top);
-        //console.log(`scroll ${scroll} pos ${position}`);
+        const position = Math.min(Math.max(parseInt(scroll * 5), 0), 100);
+        console.log(window.innerHeight / 4);
+        console.log(`scroll ${scroll} pos ${position}`);
         $sunrise.css('transform', 'translateY(' + position + '%)');
+      };
+
+      $(window).scroll(function() {
+        setPos();
       });
     }
   };

@@ -57,7 +57,7 @@
     "postcss-nested": "^5.0.5",
     "precss": "^4.0.0",
     "prettier-eslint": "^9.0.1",
-    "stylelint": "^13.13.1",
+    "stylelint": "^14.1.0",
     "yo": "^4.1.0"
   },
   "dependencies": {

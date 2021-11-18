@@ -49,6 +49,8 @@ module.exports = {
       boxShadow: {
         cover: 'inset 0px -10px 10px 0 rgba(0, 0, 0, .1)',
         ['glow-pink']: '0px 0px 8px 5px rgba(var(--color-pink), .5)',
+        ['glow-mint']: '0px 0px 8px 5px rgba(var(--color-mint), .5)',
+        ['glow-teal']: '0px 0px 8px 5px rgba(var(--color-teal), .5)',
       }
     },
   },

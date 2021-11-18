@@ -1,10 +1,10 @@
 {{ attach_library('finenothings/heading') }}
 
 {# Defaults to h2 (heading level 2) if no heading level is supplied. #}
-<{{ heading_level|default('h2') }} class="heading {{ modifier }}" {{ extra_attributes }}>
+<{{ heading_level|default('h2') }} class="heading {{ modifier }}  dark:font-mono text-center text-current dark:text-mint" {{ extra_attributes }}>
 
   {% if url %}
-    <a href="{{ url }}" class="heading__link">{{ title }}</a>
+    <a href="{{ url }}" class="heading__link no-underline hover:no-underline hover:text-maroon dark:text-current dark:hover:text-shadow-mint">{{ title }}</a>
   {% else %}
     {{ title }}
   {% endif %}

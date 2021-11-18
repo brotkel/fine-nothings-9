@@ -62,7 +62,6 @@ eyebrow:
 heading:
   css:
     component:
-      dist/css/heading.css: {}
 
 hero:
   css:
@@ -114,7 +113,6 @@ hamburger:
 toggle:
   css:
     component:
-      dist/css/toggle.css: {}
 
 logo:
   css:
