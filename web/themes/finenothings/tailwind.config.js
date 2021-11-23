@@ -43,6 +43,9 @@ module.exports = {
       mono: ['Roboto Mono Flex', 'Roboto Mono', 'ui-monospace', 'monospace'],
     },
     extend: {
+      backgroundImage: {
+        'static-pattern':  'url("../images/noise-transparent.png")',
+      },
       borderRadius: {
         ['1/2']: '50%',
       },

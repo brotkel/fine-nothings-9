@@ -11,9 +11,10 @@
   #}
   <div class="card__top relative overflow-hidden">
     <div class="card__media 
-      relative transition-all group-hover:brightness-50 group-hover:sepia 
-      dark:saturate-50 dark:group-hover:brightness-100 dark:group-hover:saturate-0 dark:group-hover:sepia-0
-      after:absolute after:bg-repeat after:-top-1/4 after:-left-1/4 after:-right-1/4 after:-bottom-1/4 after:mix-blend-hard-light after:h-[150%] after:w-[150%] after:opacity-0 group-hover:after:opacity-100 
+      relative transition-all group-hover:brightness-50
+      dark:saturate-50 dark:group-hover:brightness-75 dark:group-hover:saturate-0
+      after:absolute after:bg-maroon after:-top-1/4 after:-left-1/4 after:-right-1/4 after:-bottom-1/4 after:h-[150%] after:mix-blend-hue after:opacity-0 group-hover:after:opacity-100 after:w-[150%]
+      dark:after:bg-transparent dark:after:bg-static-pattern dark:after:bg-repeat dark:after:mix-blend-hard-light
     ">
       {% if image %}
         {{ image }}

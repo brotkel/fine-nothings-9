@@ -472,7 +472,6 @@
 }
 
 .dark .card__media::after {
-  background: transparent url('../images/noise-transparent.png') repeat 0 0;
   -webkit-animation: static 0.2s infinite;
           animation: static 0.2s infinite;
 }
@@ -2634,17 +2633,13 @@ input {
   --tw-gradient-from: rgb(var(--color-sky));
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(var(--color-sky), 0));
 }
-.after\:bg-repeat::after {
-  content: "";
-  background-repeat: repeat;
-}
 .after\:opacity-0::after {
   content: "";
   opacity: 0;
 }
-.after\:mix-blend-hard-light::after {
+.after\:mix-blend-hue::after {
   content: "";
-  mix-blend-mode: hard-light;
+  mix-blend-mode: hue;
 }
 .after\:mix-blend-color::after {
   content: "";
@@ -2717,10 +2712,6 @@ input {
 }
 .group:hover .group-hover\:brightness-50 {
   --tw-brightness: brightness(.5);
-  filter: var(--tw-filter);
-}
-.group:hover .group-hover\:sepia {
-  --tw-sepia: sepia(100%);
   filter: var(--tw-filter);
 }
 .group:hover .group-hover\:after\:opacity-100::after {
@@ -2870,9 +2861,17 @@ input {
   --tw-border-opacity: 1;
   border-color: rgba(var(--color-mint), var(--tw-border-opacity));
 }
+.dark .dark\:after\:bg-transparent::after {
+  content: "";
+  background-color: transparent;
+}
 .dark .dark\:after\:bg-gradient-to-b::after {
   content: "";
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+.dark .dark\:after\:bg-static-pattern::after {
+  content: "";
+  background-image: url("../images/noise-transparent.png");
 }
 .dark .dark\:after\:from-yellow::after {
   content: "";
@@ -2883,9 +2882,17 @@ input {
   content: "";
   --tw-gradient-to: rgb(var(--color-pink));
 }
+.dark .dark\:after\:bg-repeat::after {
+  content: "";
+  background-repeat: repeat;
+}
 .dark .dark\:after\:mix-blend-screen::after {
   content: "";
   mix-blend-mode: screen;
+}
+.dark .dark\:after\:mix-blend-hard-light::after {
+  content: "";
+  mix-blend-mode: hard-light;
 }
 .dark .dark\:hover\:bg-opacity-20:hover {
   --tw-bg-opacity: 0.2;
@@ -2914,16 +2921,12 @@ input {
   --tw-text-opacity: 1;
   color: rgba(var(--color-white), var(--tw-text-opacity));
 }
-.dark .group:hover .dark\:group-hover\:brightness-100 {
-  --tw-brightness: brightness(1);
+.dark .group:hover .dark\:group-hover\:brightness-75 {
+  --tw-brightness: brightness(.75);
   filter: var(--tw-filter);
 }
 .dark .group:hover .dark\:group-hover\:saturate-0 {
   --tw-saturate: saturate(0);
-  filter: var(--tw-filter);
-}
-.dark .group:hover .dark\:group-hover\:sepia-0 {
-  --tw-sepia: sepia(0);
   filter: var(--tw-filter);
 }
 @media (min-width: 768px) {
