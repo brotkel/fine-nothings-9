@@ -48,13 +48,13 @@
 
 {{ page.secondary_menu }}
 
-<header role="banner" class="bg-paperwhite dark:bg-night flex items-center min-h-[20rem] overflow-hidden relative p-4 shadow-cover">
+<header role="banner" class="bg-paperwhite dark:bg-night flex items-center min-h-[20rem] overflow-hidden relative p-4 shadow-cover transition-all">
   {{ page.header }}
 </header>
 <div class="
-  vistaBottom animate relative
-    before:absolute dark:before:bg-gradient-to-t before:from-[#433f5d] before:h-8 before:-top-8 before:w-full
-    after:absolute dark:after:bg-gradient-to-b after:from-sky after:h-64 after:left-0 after:w-full
+  vistaBottom {{ is_front ? 'animate' : '' }} relative
+    before:absolute dark:before:bg-gradient-to-t before:from-[#433f5d] before:h-8 before:opacity-full before:-top-8 before:w-full
+    after:absolute dark:after:bg-gradient-to-b after:from-sky after:h-64 after:left-0 after:opacity-[33%] after:w-full
 ">
 </div>
 

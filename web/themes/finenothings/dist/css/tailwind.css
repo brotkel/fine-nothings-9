@@ -1362,15 +1362,11 @@ input {
 .font-sans {
   font-family: Raleway Flex, Raleway, ui-sans-serif, sans-serif;
 }
-.font-serif {
-  font-family: Josefin Slab Flex, Josefin Slab, ui-serif, serif;
-}
 .font-mono {
   font-family: Roboto Mono Flex, Roboto Mono, ui-monospace, monospace;
 }
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
+.font-serif {
+  font-family: Josefin Slab Flex, Josefin Slab, ui-serif, serif;
 }
 .text-sm {
   font-size: 0.875rem;
@@ -1399,10 +1395,6 @@ input {
 .leading-relaxed {
   line-height: 1.625;
 }
-.text-maroon {
-  --tw-text-opacity: 1;
-  color: rgba(var(--color-maroon), var(--tw-text-opacity));
-}
 .text-black {
   --tw-text-opacity: 1;
   color: rgba(var(--color-black), var(--tw-text-opacity));
@@ -1422,11 +1414,12 @@ input {
 .text-current {
   color: currentColor;
 }
+.text-maroon {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-maroon), var(--tw-text-opacity));
+}
 .text-transparent {
   color: transparent;
-}
-.text-opacity-90 {
-  --tw-text-opacity: 0.9;
 }
 .text-opacity-50 {
   --tw-text-opacity: 0.5;
@@ -1675,6 +1668,10 @@ input {
   content: "";
   --tw-gradient-from: rgb(var(--color-sky));
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(var(--color-sky), 0));
+}
+.after\:opacity-\[33\%\]::after {
+  content: "";
+  opacity: 33%;
 }
 .after\:opacity-0::after {
   content: "";

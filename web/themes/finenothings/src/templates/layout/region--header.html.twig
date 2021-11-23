@@ -15,7 +15,7 @@
 {% if content %}
   {%
     include "@finenothings/vista/vista.twig" with {
-      animate: true,
+      animate: is_front,
     } only
   %}
   <div{{ attributes.addClass("container mx-auto") }}>

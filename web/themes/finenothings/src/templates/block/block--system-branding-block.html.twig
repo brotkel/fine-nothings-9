@@ -28,15 +28,11 @@
       <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="site-logo mr-2">
           {%
             include "@finenothings/logo/logo.twig" with {
-              animate: true,
+              animate: is_front,
             } only
           %}
+          <span class="sr-only">{{ site_name }}</span>
       </a>
     {% endif %}
-    {# {% if site_name %}
-      <div class="site-name font-serif p-4 text-8xl text-maroon text-opacity-90">
-        <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
-      </div>
-    {% endif %}    #}
   </div>
 </div>

@@ -15,8 +15,15 @@ function finenothings_preprocess_html(array &$variables) {
 /**
  * Implements hook_preprocess_page() for page.html.twig.
  */
-function finenothings_preprocess_page(array &$variables) {
-
+function finenothings_preprocess_page(&$variables) {
+  try {
+    $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+  }
+  catch (Exception $e) {
+    $variables['is_front'] = FALSE;
+  }
+  // Ensure the cache varies correctly (new in Drupal 8.3).
+  $variables['#cache']['contexts'][] = 'url.path.is_front';
 }
 
 /**
@@ -24,4 +31,32 @@ function finenothings_preprocess_page(array &$variables) {
  */
 function finenothings_preprocess_form(array &$variables) {
 
+}
+
+/**
+ * Implements hook_preprocess_block().
+ */
+function finenothings_preprocess_block(&$variables) {
+  try {
+    $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+  }
+  catch (Exception $e) {
+    $variables['is_front'] = FALSE;
+  }
+  // Ensure the cache varies correctly (new in Drupal 8.3).
+  $variables['#cache']['contexts'][] = 'url.path.is_front';
+}
+
+/**
+ * Implements hook_preprocess_region().
+ */
+function finenothings_preprocess_region(&$variables) {
+  try {
+    $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+  }
+  catch (Exception $e) {
+    $variables['is_front'] = FALSE;
+  }
+  // Ensure the cache varies correctly (new in Drupal 8.3).
+  $variables['#cache']['contexts'][] = 'url.path.is_front';
 }
