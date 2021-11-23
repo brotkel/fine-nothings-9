@@ -13,7 +13,8 @@
  */
 #}
 {% if content %}
-  <div{{ attributes.addClass("container mx-auto") }}>
+  <div{{ attributes.addClass("container flex flex-col md:flex-row items-center md:items-end justify-end md:justify-between h-full mx-auto") }}>
     {{ content }}
+    <div>&copy; {{ "now"|date("Y") }} Brandon Rotkel, All Rights Reserved.</div>
   </div>
 {% endif %}

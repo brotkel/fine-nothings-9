@@ -1,7 +1,6 @@
 {{ attach_library('finenothings/eyebrow') }}
 
-<div class="eyebrow text-center border-t border-black {{ modifier }}" {{ extra_attributes }}>
-  <p class="eyebrow__text text-sm bg-white inline-block p-4 relative -top-7">
-    {{ text }}
-  </p>
-</div>
+<p class="
+  eyebrow before:border-b after:border-b before:border-black after:border-black dark:before:border-mint dark:after:border-mint flex flex-row before:flex-1 after:flex-1 before:my-auto after:my-auto before:mr-4 before:ml-auto after:ml-4 after:mr-auto py-2 text-sm dark:text-mint {{ modifier }}" {{ extra_attributes }}>
+  {{ text }}
+</p>

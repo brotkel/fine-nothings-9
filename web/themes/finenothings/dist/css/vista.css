@@ -5,11 +5,33 @@
   }
 
   to {
-    opacity: 0.33;
+    opacity: 1;
   }
 }
 
 @keyframes fadeIn {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn-33 {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.33;
+  }
+}
+
+@keyframes fadeIn-33 {
 
   from {
     opacity: 0;
@@ -92,10 +114,18 @@
           animation-delay: 2s;
 }
 
-.vistaBottom.animate {
+.vistaBottom.animate::before {
   opacity: 0;
   -webkit-animation: fadeIn 1s ease-in forwards;
           animation: fadeIn 1s ease-in forwards;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.vistaBottom.animate::after {
+  opacity: 0;
+  -webkit-animation: fadeIn-33 1s ease-in forwards;
+          animation: fadeIn-33 1s ease-in forwards;
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s;
 }

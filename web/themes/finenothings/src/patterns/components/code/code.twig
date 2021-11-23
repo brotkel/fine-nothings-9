@@ -2,11 +2,13 @@
 {% if code or filename %}
   <div class="code border border-black border-opacity-50 m-4 rounded shadow-xl">
     {% if filename %}
-      <header class="code__filename bg-gray bg-opacity-20 bg-gradient-to-b from-transparent to-gray border-b border-black border-opacity-50 font-bold p-2 text-sm" {{ extra_attributes }}>{{ filename }}</header>
+      <header class="code__filename bg-gray bg-opacity-20 bg-gradient-to-b from-transparent to-gray border-b border-black border-opacity-50 font-bold p-2 text-sm" {{ extra_attributes }}>
+        {{ filename }}
+      </header>
     {% endif %}
     {% if code %}
       <pre class="code__code bg-paperwhite bg-opacity-25 font-mono overflow-x-auto p-2 text-sm ">
-        <code>{{ code }}</code>
+        <code class="{{ language }}">{{ code }}</code>
       </pre>
     {% endif %}
   </div>

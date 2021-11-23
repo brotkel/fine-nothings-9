@@ -104,6 +104,7 @@ sunrise:
 social-icons:
   css:
     component:
+      dist/css/social-icons.css: {}
 
 hamburger:
   css:

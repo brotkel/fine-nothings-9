@@ -11,17 +11,17 @@
       "url": "https://twitter.com"
     },
     {
-      "icon": "youtube",
-      "text": "YouTube",
-      "url": "https://youtube.com"
+      "icon": "reddit",
+      "text": "reddit",
+      "url": "https://reddit.com"
     },
     {
       "icon": "pinterest",
       "text": "Pintrest"
     },
     {
-      "icon": "instagram",
-      "text": "Instagram"
+      "icon": "drupal",
+      "text": "Drupal"
     },
     {
       "image": "<img src='https://source.unsplash.com/FIKD9t5_5zQ/128x128' alt='test image' />",

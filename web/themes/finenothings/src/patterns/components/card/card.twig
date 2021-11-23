@@ -10,7 +10,11 @@
     {{ title_suffix }}
   #}
   <div class="card__top relative overflow-hidden">
-    <div class="card__media transition-all group-hover:brightness-50 group-hover:sepia">
+    <div class="card__media 
+      relative transition-all group-hover:brightness-50 group-hover:sepia 
+      dark:saturate-50 dark:group-hover:brightness-100 dark:group-hover:saturate-0 dark:group-hover:sepia-0
+      after:absolute after:bg-repeat after:-top-1/4 after:-left-1/4 after:-right-1/4 after:-bottom-1/4 after:mix-blend-hard-light after:h-[150%] after:w-[150%] after:opacity-0 group-hover:after:opacity-100 
+    ">
       {% if image %}
         {{ image }}
       {% elseif video %}
@@ -48,7 +52,7 @@
   </div>
 
   {% if text %}
-    <div class="card__content px-8 py-4 bg-paperwhite">
+    <div class="card__content px-8 py-4 bg-paperwhite dark:bg-sky dark:bg-opacity-10 dark:text-white">
       {% if eyebrow %}
         {%
           include '@finenothings/eyebrow/eyebrow.twig' with {

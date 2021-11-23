@@ -51,7 +51,12 @@
 <header role="banner" class="bg-paperwhite dark:bg-night flex items-center min-h-[20rem] overflow-hidden relative p-4 shadow-cover">
   {{ page.header }}
 </header>
-<div class="vistaBottom animate absolute dark:bg-gradient-to-b from-sky h-64 left-0 w-full"></div>
+<div class="
+  vistaBottom animate relative
+    before:absolute dark:before:bg-gradient-to-t before:from-[#433f5d] before:h-8 before:-top-8 before:w-full
+    after:absolute dark:after:bg-gradient-to-b after:from-sky after:h-64 after:left-0 after:w-full
+">
+</div>
 
 
 {{ page.primary_menu }}
@@ -85,7 +90,7 @@
 </main>
 
 {% if page.footer %}
-  <footer role="contentinfo" class="bg-night p-4">
+  <footer role="contentinfo" class="bg-night dark:bg-gradient-to-t dark:via-maroon dark:from-orange dark:bg-blend-color-dodge font-bold h-40 p-4 text-white dark:text-night">
     {{ page.footer }}
   </footer>
 {% endif %}

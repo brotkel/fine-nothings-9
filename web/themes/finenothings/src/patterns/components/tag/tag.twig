@@ -1,4 +1,7 @@
 {{ attach_library('finenothings/tag') }}
-<span class="tag bg-gradient-to-t from-paperwhite via-white to-paperwhite cursor-pointer mr-4 rounded-lg p-2 shadow-sm text-maroon text-opacity-60 hover:text-opacity-90" {{ extra_attributes }}>
+<span class="tag 
+  bg-gradient-to-t from-paperwhite via-white to-paperwhite cursor-pointer mr-4 rounded-lg p-2 shadow-sm text-maroon text-opacity-60 hover:text-opacity-90 transition-all
+  dark:from-pink dark:to-magenta dark:font-mono dark:hover:shadow-glow-pink dark:text-white dark:text-shadow-current dark:text-opacity-70 dark:hover:text-opacity-100
+" {{ extra_attributes }}>
   {{ name }}
 </span>

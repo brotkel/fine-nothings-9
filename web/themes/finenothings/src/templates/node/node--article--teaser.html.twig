@@ -109,7 +109,7 @@
   {% endif %}
 
   <div class="mx-auto md:w-3/4 lg:w-2/3" {{ content_attributes.addClass('node-content') }}>
-    {{ content.field_body }}
+    {{ content|without('field_tags')|without('field_article_header_image') }}
   </div>
 
 </article>

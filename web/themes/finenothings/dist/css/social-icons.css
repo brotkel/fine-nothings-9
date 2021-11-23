@@ -1,0 +1,44 @@
+.social_icon__item svg {
+
+    pointer-events: none;
+
+    position: relative;
+
+    z-index: 10
+}
+
+.social_icon__item path {
+
+    fill: currentColor;
+
+    --tw-text-opacity: 1;
+
+    color: rgba(var(--color-black), var(--tw-text-opacity))
+}
+
+.dark .social_icon__item path {
+
+    fill: currentColor;
+
+    --tw-text-opacity: 1;
+
+    color: rgba(var(--color-white), var(--tw-text-opacity))
+}
+
+.social_icon__item circle {
+
+    fill: currentColor;
+
+    color: transparent
+}
+
+.dark .social_icon__item circle {
+
+    fill: currentColor;
+
+    --tw-text-opacity: 1;
+
+    color: rgba(var(--color-night), var(--tw-text-opacity))
+}
+
+/*# sourceMappingURL=social-icons.css.map */

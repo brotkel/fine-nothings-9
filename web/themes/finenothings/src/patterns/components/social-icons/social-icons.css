@@ -1,0 +1,19 @@
+.social_icon__item svg {
+  @apply pointer-events-none relative z-10;
+}
+
+.social_icon__item path {
+  @apply fill-current text-black;
+}
+
+.dark .social_icon__item path {
+  @apply fill-current text-white;
+}
+
+.social_icon__item circle {
+  @apply fill-current text-transparent;
+}
+
+.dark .social_icon__item circle {
+  @apply fill-current text-night;
+}

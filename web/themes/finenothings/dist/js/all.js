@@ -65,8 +65,6 @@
       var setPos = function setPos() {
         var scroll = 100 * (($sunriseContainer.getBoundingClientRect().top - (Math.max(window.innerHeight / 3), 250)) / window.innerHeight);
         var position = Math.min(Math.max(parseInt(scroll * 5), 0), 100);
-        console.log(window.innerHeight / 4);
-        console.log("scroll ".concat(scroll, " pos ").concat(position));
         $sunrise.css('transform', 'translateY(' + position + '%)');
       };
 

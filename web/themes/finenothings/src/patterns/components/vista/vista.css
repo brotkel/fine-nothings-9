@@ -5,6 +5,17 @@
   }
 
   to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn-33 {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
     opacity: 0.33;
   }
 }
@@ -63,8 +74,14 @@
   animation-delay: 2s;
 }
 
-.vistaBottom.animate {
+.vistaBottom.animate::before {
   @apply opacity-0;
   animation: fadeIn 1s ease-in forwards;
+  animation-delay: 2.5s;
+}
+
+.vistaBottom.animate::after {
+  @apply opacity-0;
+  animation: fadeIn-33 1s ease-in forwards;
   animation-delay: 2.5s;
 }

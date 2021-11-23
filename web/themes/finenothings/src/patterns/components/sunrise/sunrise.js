@@ -22,8 +22,6 @@
             (Math.max(window.innerHeight / 3), 250)) /
             window.innerHeight);
         const position = Math.min(Math.max(parseInt(scroll * 5), 0), 100);
-        console.log(window.innerHeight / 4);
-        console.log(`scroll ${scroll} pos ${position}`);
         $sunrise.css('transform', 'translateY(' + position + '%)');
       };
 

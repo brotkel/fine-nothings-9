@@ -8,9 +8,9 @@
         {{ image }}
       {% endif %}
       {% if url %}
-      <a href="{{ url }}" class="{{ override ? 'pl-icons__link' : 'icons__link' }} w-full h-full absolute top-0 left-0 flex items-center justify-center {{ modifier_mapping.link }}">
-        <p class="{{ override ? 'pl-icons__name' : 'icons__name sr-only' }}">{{ override ? icon : text }}</p>
-      </a>
+        <a href="{{ url }}" class="{{ override ? 'pl-icons__link' : 'icons__link' }} w-full h-full absolute top-0 left-0 flex items-center justify-center {{ modifier_mapping.link }}">
+          <p class="{{ override ? 'pl-icons__name' : 'icons__name sr-only' }}">{{ override ? icon : text }}</p>
+        </a>
       {% endif %}
     </div>
   </div>
