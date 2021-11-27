@@ -23,6 +23,7 @@
         "drupal/dark_mode_switch": "1.x-dev@dev",
         "drupal/devel": "^4.1",
         "drupal/devel_kint_extras": "^1.0",
+        "drupal/entity_pdf": "^2.0",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
         "drupal/twig_field_value": "^2.0",

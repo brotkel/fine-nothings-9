@@ -23,12 +23,13 @@
 #}
 {% set catch_cache = content.field_link|render %}
 
-<li class="flex-1 p-4">
+<li>
   {%
     include "@finenothings/card/card.twig" with {
       "image": content.field_screenshot,
       "title": label,
       "heading_level": "h3",
+      "eyebrow": content.field_project_date,
       "subhead": content.field_subhead.0 ? content.field_subhead,
       "subhead_level": "p",
       "text": content.field_technologies.0 ? content.field_technologies,

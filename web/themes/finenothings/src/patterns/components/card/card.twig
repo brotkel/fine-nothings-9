@@ -39,7 +39,11 @@
           } only
         %}
       {% endif %}
+    </div>
+  </div>
 
+  {% if text or subhead or eyebrow %}
+    <div class="card__content px-8 py-4 bg-paperwhite dark:bg-sky dark:bg-opacity-10 dark:text-white">
       {% if subhead %}
         {%
           include '@finenothings/heading/heading.twig' with {
@@ -49,11 +53,6 @@
           } only
         %}
       {% endif %}
-    </div>
-  </div>
-
-  {% if text %}
-    <div class="card__content px-8 py-4 bg-paperwhite dark:bg-sky dark:bg-opacity-10 dark:text-white">
       {% if eyebrow %}
         {%
           include '@finenothings/eyebrow/eyebrow.twig' with {

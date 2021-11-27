@@ -23,7 +23,7 @@ function handleError(err) {
 
 // Export our tasks.
 module.exports = {
-  // Compile Sass.
+  // Compile CSS.
   compileCSS: function() {
     return src('./src/patterns/**/**/*.css')
       .pipe(sourcemaps.init())

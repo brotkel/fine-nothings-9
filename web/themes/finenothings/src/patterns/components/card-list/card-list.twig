@@ -20,7 +20,7 @@
     %}
   {% endif %}
 
-  <ul class="card-list__items block md:flex list-none">
+  <ul class="card-list__items grid grid-row grid-cols-1 md:grid-cols-3 gap-4 list-none">
     {% block card_items %}
       {#
         This for loop is only used to display the card list
@@ -28,7 +28,7 @@
         See paragraph--card-list.html.twig for more info.
       #}
       {% for item in items %}
-        <li class="card-list__item flex-1 p-4">
+        <li class="card-list__item">
           {%
             include '@finenothings/card/card.twig' with {
               "image": item.image,

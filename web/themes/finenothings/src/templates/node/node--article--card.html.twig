@@ -1,0 +1,39 @@
+{#
+/**
+ * @file
+ * Theme implementation to display a Card paragraph display.
+ *
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'card-list__item',
+  ]
+%}
+{#
+  Requires: https://www.drupal.org/project/twig_field_value.
+  The field_raw and field_target_entity filters do not provide any cache information.
+  Without additional measures content printed with these filters will not be update
+  when changed in the backend. You can workaround this by rendering the field in
+  your template but not display the result.
+#}
+{% set catch_cache = content.field_link|render %}
+
+<li>
+  {%
+    include "@finenothings/card/card.twig" with {
+      "image": content.field_article_header_image,
+      "eyebrow": date,
+      "subhead": label,
+      "subhead_level": "h3",
+      "text": content.field_tags,
+      "url": url,
+      "modifier": attributes.addClass(classes).class,
+      "extra_attributes": attributes|without(class)
+    } only
+  %}
+</li>

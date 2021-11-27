@@ -46,52 +46,53 @@
  */
 #}
 
-{{ page.secondary_menu }}
+<div class="flex flex-col min-h-screen">
+  {{ page.secondary_menu }}
 
-<header role="banner" class="bg-paperwhite dark:bg-night flex items-center min-h-[20rem] overflow-hidden relative p-4 shadow-cover transition-all">
-  {{ page.header }}
-</header>
-<div class="
-  vistaBottom {{ is_front ? 'animate' : '' }} relative
-    before:absolute dark:before:bg-gradient-to-t before:from-[#433f5d] before:h-8 before:opacity-full before:-top-8 before:w-full
-    after:absolute dark:after:bg-gradient-to-b after:from-sky after:h-64 after:left-0 after:opacity-[33%] after:w-full
-">
-</div>
-
-
-{{ page.primary_menu }}
-
-{{ page.breadcrumb }}
-
-{{ page.highlighted }}
-
-{{ page.help }}
-
-<main role="main" class="container mx-auto">
-  <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
-  <div class="md:flex">
-    <div class="md:flex-1 p-4">
-      {{ page.content }}
-    </div>{# /.layout-content #}
-
-    {% if page.sidebar_first %}
-      <aside class="md:w-1/4 p-4" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
-    {% endif %}
-
-    {% if page.sidebar_second %}
-      <aside class="md:w-1/4" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
+  <header role="banner" class="bg-paperwhite dark:bg-night flex items-center min-h-[20rem] overflow-hidden relative p-4 shadow-cover transition-all">
+    {{ page.header }}
+  </header>
+  <div class="
+    vistaBottom {{ is_front ? 'animate' : '' }} pointer-events-none relative
+      before:absolute dark:before:bg-gradient-to-t before:from-[#433f5d] before:h-8 before:opacity-full before:-top-8 before:w-full
+      after:absolute dark:after:bg-gradient-to-b after:from-sky after:h-64 after:left-0 after:opacity-[33%] after:w-full
+  ">
   </div>
-</main>
 
-{% if page.footer %}
-  <footer role="contentinfo" class="bg-night dark:bg-gradient-to-t dark:via-maroon dark:from-orange dark:bg-blend-color-dodge font-bold h-40 p-4 text-white dark:text-night">
-    {{ page.footer }}
-  </footer>
-{% endif %}
 
+  {{ page.primary_menu }}
+
+  {{ page.breadcrumb }}
+
+  {{ page.highlighted }}
+
+  {{ page.help }}
+
+  <main role="main" class="container flex-1 mx-auto">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+    <div class="md:flex">
+      <div class="md:flex-1 p-4">
+        {{ page.content }}
+      </div>{# /.layout-content #}
+
+      {% if page.sidebar_first %}
+        <aside class="md:w-1/4 p-4" role="complementary">
+          {{ page.sidebar_first }}
+        </aside>
+      {% endif %}
+
+      {% if page.sidebar_second %}
+        <aside class="md:w-1/4" role="complementary">
+          {{ page.sidebar_second }}
+        </aside>
+      {% endif %}
+    </div>
+  </main>
+
+  {% if page.footer %}
+    <footer role="contentinfo" class="bg-night dark:bg-gradient-to-t dark:via-maroon dark:from-orange dark:bg-blend-color-dodge font-bold h-40 p-4 text-white dark:text-night">
+      {{ page.footer }}
+    </footer>
+  {% endif %}
+</div>

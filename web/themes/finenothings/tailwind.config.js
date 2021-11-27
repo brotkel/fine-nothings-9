@@ -14,9 +14,16 @@ const colorFn = cssVariable => {
 
 module.exports = {
   mode: 'jit',
-  purge: [
-    './src/**/*.{html,twig,php,js,css,json}'
-  ],
+  purge: {
+    content: [
+      './src/**/*.{html,twig,php,js,css,json}',
+      './dist/**/*.{html,twig,php,js,css,json}'
+    ],
+    safelist: [
+      'list-inside',
+      'text-center',
+    ]
+  },
   darkMode: 'class',
   theme: {
     colors: {

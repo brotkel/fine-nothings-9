@@ -56,13 +56,17 @@
 }
 
 .logo--light g {
+  stroke-dashoffset: 0;
+  fill: rgb(var(--color-maroon));
+  fill-opacity: 1;
+  stroke: transparent;
+}
+
+.animate .logo--light g {
   fill: transparent;
   stroke: #000;
   stroke-dasharray: 643px;
   stroke-dashoffset: 643px;
-}
-
-.animate .logo--light g {
   animation: borderani 5s forwards, stokeFill 4s 1s forwards;
 }
 
