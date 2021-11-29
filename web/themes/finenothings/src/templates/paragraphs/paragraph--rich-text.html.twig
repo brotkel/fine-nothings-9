@@ -49,9 +49,12 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      {% if content.field_side_image.0 is defined %}
+      <div class="relative">
+        {{ content.field_side_image }}
+      </div>
+      {# {% if content.field_side_image.0 is defined %}
         <img src="{{ content.field_side_image.0['#item'].entity.uri.value|image_style('square_large') }}" class="bg-paperwhite dark:bg-night border-8 border-paperwhite dark:border-none float-right ml-8 rounded-[50%] mb-8 max-w-xs shadow-md dark:shadow-glow-mint shape-circle-1/2 w-1/3" alt="{{ content.field_side_image.0['#item'].alt }}" />
-      {% endif %}
+      {% endif %} #}
       <div>
         {{ content.field_rich_text }}
       </div>

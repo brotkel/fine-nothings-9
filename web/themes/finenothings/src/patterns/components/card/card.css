@@ -56,6 +56,10 @@
   }
 }
 
+.card__link {
+  @apply text-current;
+}
+
 /* Styles for Wide variation of Card */
 .card--wide {
   @apply flex flex-col;

@@ -101,6 +101,10 @@
   width: 100%;
 }
 
+.card__link {
+  color: currentColor;
+}
+
 /* Styles for Wide variation of Card */
 
 .card--wide {
