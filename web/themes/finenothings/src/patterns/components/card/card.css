@@ -56,7 +56,7 @@
   }
 }
 
-.card__link {
+.card__heading .heading__link {
   @apply text-current;
 }
 

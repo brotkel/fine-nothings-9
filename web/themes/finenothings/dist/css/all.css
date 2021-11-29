@@ -480,7 +480,7 @@
   width: 100%;
 }
 
-.card__link {
+.card__heading .heading__link {
   color: currentColor;
 }
 
