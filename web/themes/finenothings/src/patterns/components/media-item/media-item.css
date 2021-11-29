@@ -1,7 +1,7 @@
 .media-item__image {
 
   img {
-    @apply block;
+    @apply block w-full;
   }
 }
 

@@ -1,0 +1,264 @@
+/*
+
+XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
+
+*/
+
+.code .hljs {
+    background: transparent;
+    color: black;
+  }
+
+.code .hljs-comment,
+  .code .hljs-template_comment,
+  .code .hljs-javadoc,
+  .code .hljs-comment * {
+    color: #006a00;
+  }
+
+.code .hljs-keyword,
+  .code .hljs-literal,
+  .code .nginx .hljs-title {
+    color: #aa0d91;
+  }
+
+.code .method,
+  .code .hljs-list .hljs-title,
+  .code .hljs-tag .hljs-title,
+  .code .setting .hljs-value,
+  .code .hljs-winutils,
+  .code .tex .hljs-command,
+  .code .http .hljs-title,
+  .code .hljs-request,
+  .code .hljs-status {
+    color: #008;
+  }
+
+.code .hljs-envvar,
+  .code .tex .hljs-special {
+    color: #660;
+  }
+
+.code .hljs-string {
+    color: #c41a16;
+  }
+
+.code .hljs-tag .hljs-value,
+  .code .hljs-cdata,
+  .code .hljs-filter .hljs-argument,
+  .code .hljs-attr_selector,
+  .code .apache .hljs-cbracket,
+  .code .hljs-date,
+  .code .hljs-regexp {
+    color: #080;
+  }
+
+.code .hljs-sub .hljs-identifier,
+  .code .hljs-pi,
+  .code .hljs-tag,
+  .code .hljs-tag .hljs-keyword,
+  .code .hljs-decorator,
+  .code .ini .hljs-title,
+  .code .hljs-shebang,
+  .code .hljs-prompt,
+  .code .hljs-hexcolor,
+  .code .hljs-rules .hljs-value,
+  .code .css .hljs-value .hljs-number,
+  .code .hljs-symbol,
+  .code .hljs-symbol .hljs-string,
+  .code .hljs-number,
+  .code .css .hljs-function,
+  .code .clojure .hljs-title,
+  .code .clojure .hljs-built_in,
+  .code .hljs-function .hljs-title,
+  .code .coffeescript .hljs-attribute {
+    color: #1c00cf;
+  }
+
+.code .hljs-class .hljs-title,
+  .code .haskell .hljs-type,
+  .code .smalltalk .hljs-class,
+  .code .hljs-javadoctag,
+  .code .hljs-yardoctag,
+  .code .hljs-phpdoc,
+  .code .hljs-typename,
+  .code .hljs-tag .hljs-attribute,
+  .code .hljs-doctype,
+  .code .hljs-class .hljs-id,
+  .code .hljs-built_in,
+  .code .setting,
+  .code .hljs-params,
+  .code .clojure .hljs-attribute {
+    color: #5c2699;
+  }
+
+.code .hljs-variable {
+  color: #3f6e74;
+  }
+
+.code .css .hljs-tag,
+  .code .hljs-rules .hljs-property,
+  .code .hljs-pseudo,
+  .code .hljs-subst {
+    color: #000;
+  }
+
+.code .css .hljs-class,
+  .code .css .hljs-id {
+    color: #9B703F;
+  }
+
+.code .hljs-value .hljs-important {
+    color: #ff7700;
+    font-weight: bold;
+  }
+
+.code .hljs-rules .hljs-keyword {
+    color: #C5AF75;
+  }
+
+.code .hljs-annotation,
+  .code .apache .hljs-sqbracket,
+  .code .nginx .hljs-built_in {
+    color: #9B859D;
+  }
+
+.code .hljs-preprocessor,
+  .code .hljs-preprocessor *,
+  .code .hljs-pragma {
+    color: #643820;
+  }
+
+.code .tex .hljs-formula {
+    background-color: #EEE;
+    font-style: italic;
+  }
+
+.code .diff .hljs-header,
+  .code .hljs-chunk {
+    color: #808080;
+    font-weight: bold;
+  }
+
+.code .diff .hljs-change {
+    background-color: #BCCFF9;
+  }
+
+.code .hljs-addition {
+    background-color: #BAEEBA;
+  }
+
+.code .hljs-deletion {
+    background-color: #FFC8BD;
+  }
+
+.code .hljs-comment .hljs-yardoctag {
+    font-weight: bold;
+  }
+
+.code .method .hljs-id {
+    color: #000;
+  }
+
+/* Tomorrow Night Eighties Theme */
+
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+
+/* Tomorrow Comment */
+
+.dark .code .hljs-comment,
+  .dark .code .hljs-title {
+    color: #999999;
+  }
+
+/* Tomorrow Red */
+
+.dark .code .hljs-variable,
+  .dark .code .hljs-attribute,
+  .dark .code .hljs-tag,
+  .dark .code .hljs-regexp,
+  .dark .code .ruby .hljs-constant,
+  .dark .code .xml .hljs-tag .hljs-title,
+  .dark .code .xml .hljs-pi,
+  .dark .code .xml .hljs-doctype,
+  .dark .code .html .hljs-doctype,
+  .dark .code .css .hljs-id,
+  .dark .code .css .hljs-class,
+  .dark .code .css .hljs-pseudo {
+    color: #f2777a;
+  }
+
+/* Tomorrow Orange */
+
+.dark .code .hljs-number,
+  .dark .code .hljs-preprocessor,
+  .dark .code .hljs-pragma,
+  .dark .code .hljs-built_in,
+  .dark .code .hljs-literal,
+  .dark .code .hljs-params,
+  .dark .code .hljs-constant {
+    color: #f99157;
+  }
+
+/* Tomorrow Yellow */
+
+.dark .code .ruby .hljs-class .hljs-title,
+  .dark .code .css .hljs-rules .hljs-attribute {
+    color: #ffcc66;
+  }
+
+/* Tomorrow Green */
+
+.dark .code .hljs-string,
+  .dark .code .hljs-value,
+  .dark .code .hljs-inheritance,
+  .dark .code .hljs-header,
+  .dark .code .ruby .hljs-symbol,
+  .dark .code .xml .hljs-cdata {
+    color: #99cc99;
+  }
+
+/* Tomorrow Aqua */
+
+.dark .code .css .hljs-hexcolor {
+    color: #66cccc;
+  }
+
+/* Tomorrow Blue */
+
+.dark .code .hljs-function,
+  .dark .code .python .hljs-decorator,
+  .dark .code .python .hljs-title,
+  .dark .code .ruby .hljs-function .hljs-title,
+  .dark .code .ruby .hljs-title .hljs-keyword,
+  .dark .code .perl .hljs-sub,
+  .dark .code .javascript .hljs-title,
+  .dark .code .coffeescript .hljs-title {
+    color: #6699cc;
+  }
+
+/* Tomorrow Purple */
+
+.dark .code .hljs-keyword,
+  .dark .code .javascript .hljs-function {
+    color: #cc99cc;
+  }
+
+.dark .code .hljs {
+    background: transparent;
+    color: #cccccc;
+  }
+
+.dark .code .coffeescript .javascript,
+  .dark .code .javascript .xml,
+  .dark .code .tex .hljs-formula,
+  .dark .code .xml .javascript,
+  .dark .code .xml .vbscript,
+  .dark .code .xml .css,
+  .dark .code .xml .hljs-cdata {
+    opacity: 0.5;
+  }
+
+/*# sourceMappingURL=code.css.map */

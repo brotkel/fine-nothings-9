@@ -54,10 +54,20 @@ card-list:
     component:
       dist/css/card-list.css: {}
 
+code:
+  css:
+    component:
+      dist/css/code.css: {}
+
 eyebrow:
   css:
     component:
       dist/css/eyebrow.css: {}
+
+hamburger:
+  css:
+    component:
+      dist/css/hamburger.css: {}
 
 heading:
   css:
@@ -68,6 +78,11 @@ hero:
     component:
       dist/css/hero.css: {}
 
+logo:
+  css:
+    component:
+      dist/css/logo.css: {}
+
 media-item:
   css:
     component:
@@ -77,19 +92,6 @@ message:
   css:
     component:
       dist/css/message.css: {}
-
-tabs:
-  css:
-    component:
-      dist/css/tabs.css: {}
-
-tag:
-  css:
-    component:
-
-code:
-  css:
-    component:
 
 sunrise:
   css:
@@ -106,19 +108,19 @@ social-icons:
     component:
       dist/css/social-icons.css: {}
 
-hamburger:
+tabs:
   css:
     component:
-      dist/css/hamburger.css: {}
+      dist/css/tabs.css: {}
+
+tag:
+  css:
+    component:
+      dist/css/tag.css: {}
 
 toggle:
   css:
     component:
-
-logo:
-  css:
-    component:
-      dist/css/logo.css: {}
 
 vista:
   css:

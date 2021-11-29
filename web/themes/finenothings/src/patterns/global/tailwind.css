@@ -55,6 +55,17 @@
     @apply border border-gray;
   }
 
+  main a {
+    @apply underline text-maroon;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-decoration-color: rgb(var(--color-magenta));
+  }
+
+  .dark main a {
+    @apply no-underline text-pink hover:text-shadow-pink;
+  }
+
   .dark code {
     @apply text-mint;
   }
@@ -104,6 +115,10 @@
 
     .text-shadow-current {
       text-shadow: 0 0 4px currentColor;
+    }
+
+    .text-shadow-current-sm {
+      text-shadow: 0 0 2px currentColor;
     }
 
     .text-shadow-mint {

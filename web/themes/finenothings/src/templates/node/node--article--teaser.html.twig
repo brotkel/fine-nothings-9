@@ -95,13 +95,12 @@
   </header>
 
   {% if display_submitted %}
-    <footer class="flex flex-row items-center justify-center mx-auto md:w-3/4 lg:w-2/3">
-      {{ author_picture }}
-      <div class="mx-2" {{ author_attributes }}>
+    <footer class="flex flex-col md:flex-row gap-4 items-center justify-center mx-auto md:w-3/4 lg:w-2/3">
+      <div {{ author_attributes }}>
         {{ date }}
         {{ metadata }}
       </div>
-      <div class="mx-2">
+      <div>
         {{ content.field_tags }}
       </div>
 

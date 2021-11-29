@@ -1,6 +1,7 @@
-.eyebrow__text {
+.eyebrow,
+.dark .eyebrow {
   
   a {
-    @apply hover:underline;
+    @apply text-current no-underline hover:underline;
   }
 }

@@ -3,6 +3,11 @@
     display: block
 }
 
+  .media-item__image img {
+
+    width: 100%
+}
+
 .media-item__caption {
 
     margin-top: 0.5rem;

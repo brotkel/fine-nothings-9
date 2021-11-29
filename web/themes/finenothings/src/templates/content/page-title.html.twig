@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Theme override for page titles.
+ *
+ * Available variables:
+ * - title_attributes: HTML attributes for the page title element.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title: The page title, for use in the actual content.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ */
+#}
+{%
+  set classes = [
+    'mb-2'
+  ]
+%}
+
+{{ title_prefix }}
+{% if title %}
+  {%
+    embed "@finenothings/heading/heading.twig" with {
+      "extra_attributes": title_attributes|without(class),
+      "heading_level": "h1",
+      "modifier": title_attributes.addClass(classes).class,
+      "title": title,
+    } only
+  %}
+    {% block heading %}
+      {{ heading }}
+    {% endblock heading %}
+  {% endembed %}
+{% endif %}
+{{ title_suffix }}

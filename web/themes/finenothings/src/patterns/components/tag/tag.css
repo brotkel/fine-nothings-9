@@ -1,0 +1,4 @@
+.tag a,
+.dark .tag a {
+  @apply text-current no-underline;
+}

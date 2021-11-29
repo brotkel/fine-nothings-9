@@ -1,6 +1,6 @@
 {{ attach_library('finenothings/card') }}
 
-<article class="card group relative overflow-hidden rounded {{ modifier }}" {{ extra_attributes }}>
+<article class="card group h-full overflow-hidden relative rounded {{ modifier }}" {{ extra_attributes }}>
   {#
     Optional: Pass in Drupal specific functionality.
     Note that this is mostly relevant to nodes and blocks.
@@ -43,7 +43,7 @@
   </div>
 
   {% if text or subhead or eyebrow %}
-    <div class="card__content px-8 py-4 bg-paperwhite dark:bg-sky dark:bg-opacity-10 dark:text-white">
+    <div class="card__content bg-paperwhite dark:bg-sky dark:bg-opacity-10 h-full px-8 py-4 dark:text-white">
       {% if subhead %}
         {%
           include '@finenothings/heading/heading.twig' with {

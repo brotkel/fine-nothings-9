@@ -91,17 +91,25 @@
   {{ title_suffix }}
 
   {% if display_submitted %}
-    <footer>
-      {{ author_picture }}
-      <div{{ author_attributes }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
+    <header class="flex flex-col md:flex-row gap-4 items-center justify-center md:mb-2">
+      <div class="border-r md:border-current flex gap-4 items-center md:pr-2">
+        <address rel="author"> 
+          <span class="sr-only">By {{ author_name }}</span>
+          {{ author_picture }}
+        </address>
+        <div{{ author_attributes }}>
+          {% trans %}Posted on {{ date }}{% endtrans %}
+          {{ metadata }}
+        </div>
       </div>
-    </footer>
+      <div>
+        {{ content.field_tags }}
+      </div>
+    </header>
   {% endif %}
 
   <div{{ content_attributes.addClass('node-content') }}>
-    {{ content }}
+    {{ content|without('field_tags') }}
   </div>
 
 </article>

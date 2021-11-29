@@ -1,4 +1,15 @@
-.eyebrow__text a:hover {
+.eyebrow a, .dark .eyebrow a {
+  
+    color: currentColor
+}
+  
+  .eyebrow a, .dark .eyebrow a {
+  
+    text-decoration: none
+}
+  
+  .eyebrow a:hover, .dark .eyebrow a:hover {
+  
     text-decoration: underline
 }
 
