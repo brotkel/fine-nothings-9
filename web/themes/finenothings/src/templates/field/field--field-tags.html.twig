@@ -41,20 +41,20 @@
 {# If the label is hidden don't add any additional markup. #}
 {% if label_hidden %}
   {% if multiple %}
+    <div class="flex flex-wrap py-2">
       {% for item in items %}
-        <div class="flex flex-wrap py-2">
-          {%
-            embed "@finenothings/tag/tag.twig" with {
-              "name": item.content,
-              "extra_attributes": item.attributes
-            } only
-          %}
-            {% block tags %}
-              {{ tag }}
-            {% endblock tags %}
-          {% endembed %}
-        </div>
+        {%
+          embed "@finenothings/tag/tag.twig" with {
+            "name": item.content,
+            "extra_attributes": item.attributes
+          } only
+        %}
+          {% block tags %}
+            {{ tag }}
+          {% endblock tags %}
+        {% endembed %}
       {% endfor %}
+    </div>
   {% else %}
     {% for item in items %}
       {%
