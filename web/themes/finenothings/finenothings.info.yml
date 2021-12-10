@@ -66,3 +66,7 @@ regions:
   header: Header
   content: Content
   footer: Footer
+
+entity_print:
+  node:
+    all: 'finenothings/print-styling'

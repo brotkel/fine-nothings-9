@@ -1,9 +1,6 @@
 .media-item__image img {
 
-    display: block
-}
-
-  .media-item__image img {
+    display: block;
 
     width: 100%
 }

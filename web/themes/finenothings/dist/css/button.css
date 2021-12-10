@@ -10,7 +10,6 @@
   border-radius: 0.125rem;
   border-width: 1px;
   border-color: transparent;
-  --tw-bg-opacity: 1;
   background-color: rgba(var(--color-gray), var(--tw-bg-opacity));
   --tw-bg-opacity: 0.5;
   padding-left: 0.75rem;
@@ -19,74 +18,42 @@
   padding-bottom: 1.25rem;
   text-align: center;
   font-weight: 700;
-  transition: background-color 0, color 0;
+  transition: background-color 0, color 0
 }
 
 .button:hover, .button:active {
   --tw-bg-opacity: 1;
   background-color: rgba(var(--color-night), var(--tw-bg-opacity));
-}
-
-.button:hover, .button:active {
   --tw-text-opacity: 1;
-  color: rgba(var(--color-white), var(--tw-text-opacity));
+  color: rgba(var(--color-white), var(--tw-text-opacity))
 }
 
 .button:disabled {
   cursor: not-allowed;
-}
-
-.button:disabled {
-  opacity: 0.5;
+  opacity: 0.5
 }
 
 .button--primary {
   border-radius: 0.125rem;
   border-width: 2px;
-  --tw-border-opacity: 1;
   border-color: rgba(var(--color-gray), var(--tw-border-opacity));
   --tw-border-opacity: 0.5;
   --tw-bg-opacity: 1;
   background-color: rgba(var(--color-white), var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
   color: rgba(var(--color-gray), var(--tw-text-opacity));
   --tw-text-opacity: 0.5;
-  text-decoration: none;
+  text-decoration: none
 }
 
 .button--primary:hover, .button--primary:active {
   border-width: 2px;
-}
-
-.button--primary:hover, .button--primary:active {
-  --tw-border-opacity: 1;
   border-color: rgba(var(--color-gray), var(--tw-border-opacity));
-}
-
-.button--primary:hover, .button--primary:active {
   --tw-border-opacity: 0.5;
-}
-
-.button--primary:hover, .button--primary:active {
-  --tw-bg-opacity: 1;
   background-color: rgba(var(--color-white), var(--tw-bg-opacity));
-}
-
-.button--primary:hover, .button--primary:active {
   --tw-bg-opacity: 0.8;
-}
-
-.button--primary:hover, .button--primary:active {
-  --tw-text-opacity: 1;
   color: rgba(var(--color-gray), var(--tw-text-opacity));
-}
-
-.button--primary:hover, .button--primary:active {
   --tw-text-opacity: 0.5;
-}
-
-.button--primary:hover, .button--primary:active {
-  text-decoration: none;
+  text-decoration: none
 }
 
 /*# sourceMappingURL=button.css.map */

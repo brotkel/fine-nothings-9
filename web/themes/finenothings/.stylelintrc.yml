@@ -29,11 +29,6 @@ rules:
   # https://stylelint.io/user-guide/rules/font-family-no-duplicate-names/
   font-family-no-missing-generic-family-keyword: true
 
-  ## Function.
-  # Disallow an invalid expression within calc functions.
-  # https://stylelint.io/user-guide/rules/function-calc-no-invalid/
-  function-calc-no-invalid: true
-
   # Include spaces around operators.
   # https://stylelint.io/user-guide/rules/function-calc-no-unspaced-operator/
   function-calc-no-unspaced-operator: true

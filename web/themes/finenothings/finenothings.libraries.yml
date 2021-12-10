@@ -7,6 +7,11 @@ global:
     base:
       dist/css/tailwind.css: {}
 
+print-styling:
+  css:
+    theme:
+      dist/css/print-styles.css: {}
+
 # Example external library.
 # webfonts:
 #   version: 1.x

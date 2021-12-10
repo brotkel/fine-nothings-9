@@ -32,7 +32,9 @@
     "@pattern-lab/core": "^5.14.2",
     "@pattern-lab/engine-twig-php": "^5.14.2",
     "@pattern-lab/uikit-workshop": "^5.14.2",
-    "autoprefixer": "^10.2.5",
+    "@ronilaukkarinen/gulp-stylelint": "^14.0.5",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "autoprefixer": "^10.4.0",
     "browser-sync": "^2.26.7",
     "cross-env": "^5.2.1",
     "cssnano": "^4.1.10",
@@ -49,19 +51,14 @@
     "gulp-postcss": "^9.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-stylelint": "^11.0.0",
     "patternlab-plugin-darkmode": "^1.0.2",
-    "postcss": "^8.3.10",
+    "postcss": "^8.4.4",
     "postcss-cli": "^8.3.0",
     "postcss-import": "^14.0.2",
     "postcss-nested": "^5.0.5",
     "precss": "^4.0.0",
     "prettier-eslint": "^9.0.1",
-    "stylelint": "^14.1.0",
+    "tailwindcss": "^3.0.0",
     "yo": "^4.1.0"
-  },
-  "dependencies": {
-    "@tailwindcss/aspect-ratio": "^0.2.0",
-    "tailwindcss": "^2.2.16"
   }
 }

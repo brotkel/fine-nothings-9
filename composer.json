@@ -25,7 +25,7 @@
         "drupal/devel": "^4.1",
         "drupal/devel_kint_extras": "^1.0",
         "drupal/disqus": "^2.0@alpha",
-        "drupal/entity_pdf": "^2.0",
+        "drupal/entity_print": "^2.4",
         "drupal/google_analytics": "^4.0",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",

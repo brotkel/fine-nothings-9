@@ -9,17 +9,12 @@
   
   .sunrise img, .sunrise picture {
   width: 100%;
-}
-
-  
-  .sunrise img,
-  .sunrise picture {
     aspect-ratio: 1;
     margin-top: -20%;
     -o-object-fit: cover;
        object-fit: cover;
     filter: sepia(1) saturate(3) hue-rotate(-80deg) brightness(0.6);
-  }
+}
 
 .dark .sunrise {
     /* stylelint-disable function-comma-space-after */

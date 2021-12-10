@@ -4,7 +4,7 @@
 const { src } = require('gulp');
 
 // Include Our Plugins
-const gulpStylelint = require('gulp-stylelint');
+const gulpStylelint = require('@ronilaukkarinen/gulp-stylelint');
 const eslint = require('gulp-eslint');
 
 // Export our tasks.

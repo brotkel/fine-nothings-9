@@ -1,0 +1,245 @@
+/* Colors */
+.text-white {
+  color: rgb(255, 255, 255);
+}
+
+.text-paperwhite {
+  color: rgb(255, 255, 238);
+}
+
+.text-black {
+  color: rgb(0, 0, 0);
+}
+
+.text-sky {
+  color: rgb(132, 139, 189);
+}
+
+.text-night {
+  color: rgb(36, 27, 47);
+}
+
+.text-gray {
+  color: rgb(128, 128, 128);
+}
+
+.text-red {
+  color: rgb(249, 126, 114);
+}
+
+.text-orange {
+  color: rgb(209, 134, 22);
+}
+
+.text-yellow {
+  color: rgb(254, 222, 93);
+}
+
+.text-mint {
+  color: rgb(114, 241, 184);
+}
+
+.text-teal {
+  color: rgb(54, 249, 246);
+}
+
+.text-magenta {
+  color: rgb(136, 0, 136);
+}
+
+.text-pink {
+  color: rgb(255, 126, 219);
+}
+
+.text-maroon {
+  color: rgb(95, 51, 55);
+}
+
+/* Raleway Mono */
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Josefin Slab Mono */
+@font-face {
+  font-family: 'Josefin Slab';
+  src: url('../fonts/JosefinSlab-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Josefin Slab';
+  src: url('../fonts/JosefinSlab-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Josefin Slab';
+  src: url('../fonts/JosefinSlab-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Josefin Slab';
+  src: url('../fonts/JosefinSlab-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Roboto Mono */
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('../fonts/RobotoMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('../fonts/RobotoMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('../fonts/RobotoMono-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('../fonts/RobotoMono-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Base */
+
+html {
+  @apply font-sans text-xs;
+}
+
+h1 {
+  @apply font-bold font-serif mb-2 mt-4 text-4xl;
+}
+
+h2 {
+  @apply font-bold font-serif mb-2 mt-4 text-2xl;
+}
+
+h3 {
+  @apply font-serif mb-2 mt-4 text-xl ;
+}
+
+h4 {
+  @apply font-bold font-serif mb-2 mt-4 text-lg;
+}
+
+h5 {
+  @apply italic font-serif mb-2 mt-4 text-lg ;
+}
+
+h6 {
+  @apply font-serif mb-2 mt-4;
+}
+
+p {
+  @apply mb-3 mb-2 mt-2;
+}
+
+blockquote {
+  @apply p-4;
+  background-color: rgba(254, 222, 93, 0.3);
+  border: 1px solid rgb(254, 222, 93);
+}
+
+ul {
+  @apply list-disc;
+}
+
+ol {
+  @apply list-decimal;
+}
+
+input {
+  border: 1px solid rgb(128, 128, 128);
+}
+
+a {
+  color: rgb(95, 51, 55);
+  text-decoration: underline;
+}
+
+.visually-hidden {
+  @apply sr-only;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.normal-case {
+  text-transform: none;
+}
+
+.truncate {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.table-auto {
+  table-layout: auto;
+}
+
+.table-fixed {
+  table-layout: fixed;
+}
