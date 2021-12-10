@@ -1,0 +1,16 @@
+.dark main a {
+    --tw-text-opacity: 1;
+    color: rgba(var(--color-pink), var(--tw-text-opacity));
+    text-decoration: none;
+}
+
+  .dark main a:hover {
+    text-shadow: 0 0 4px rgba(var(--color-pink), 0.5);
+  }
+
+.dark code {
+    --tw-text-opacity: 1;
+    color: rgba(var(--color-mint), var(--tw-text-opacity));
+}
+
+/*# sourceMappingURL=_text.css.map */

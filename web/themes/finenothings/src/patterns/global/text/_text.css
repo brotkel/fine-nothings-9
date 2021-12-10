@@ -1,0 +1,7 @@
+.dark main a {
+  @apply no-underline text-pink hover:text-shadow-pink;
+}
+
+.dark code {
+  @apply text-mint;
+}

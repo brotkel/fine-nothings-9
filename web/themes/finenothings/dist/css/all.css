@@ -168,6 +168,23 @@
 
 /*# sourceMappingURL=_fonts.css.map */
 
+.dark main a {
+    --tw-text-opacity: 1;
+    color: rgba(var(--color-pink), var(--tw-text-opacity));
+    text-decoration: none;
+}
+
+  .dark main a:hover {
+    text-shadow: 0 0 4px rgba(var(--color-pink), 0.5);
+  }
+
+.dark code {
+    --tw-text-opacity: 1;
+    color: rgba(var(--color-mint), var(--tw-text-opacity));
+}
+
+/*# sourceMappingURL=_text.css.map */
+
 .accordion {
   border-bottom-width: 1px;
   border-left-width: 1px;
@@ -1201,6 +1218,9 @@ blockquote {
   background-color: rgba(254, 222, 93, 0.3);
   border: 1px solid rgb(254, 222, 93);
 }
+code {
+  font-family: Roboto Mono Flex, Roboto Mono, ui-monospace, monospace;
+}
 ul {
   list-style-type: disc;
 }
@@ -1564,6 +1584,18 @@ a {
   font-weight: 700;
   font-style: italic;
   font-display: fallback;
+}
+.dark main a {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-pink), var(--tw-text-opacity));
+  text-decoration: none;
+}
+.dark main a:hover {
+    text-shadow: 0 0 4px rgba(var(--color-pink), 0.5);
+  }
+.dark code {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-mint), var(--tw-text-opacity));
 }
 /* ! tailwindcss v3.0.0 | MIT License | https://tailwindcss.com */
 /*

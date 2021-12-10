@@ -162,6 +162,18 @@
   font-style: italic;
   font-display: fallback;
 }
+.dark main a {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-pink), var(--tw-text-opacity));
+  text-decoration: none;
+}
+.dark main a:hover {
+    text-shadow: 0 0 4px rgba(var(--color-pink), 0.5);
+  }
+.dark code {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-mint), var(--tw-text-opacity));
+}
 /* ! tailwindcss v3.0.0 | MIT License | https://tailwindcss.com */
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)

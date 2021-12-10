@@ -157,7 +157,7 @@ h2 {
 }
 
 h3 {
-  @apply font-serif mb-2 mt-4 text-xl ;
+  @apply font-serif mb-2 mt-4 text-xl;
 }
 
 h4 {
@@ -173,13 +173,17 @@ h6 {
 }
 
 p {
-  @apply mb-3 mb-2 mt-2;
+  @apply mb-2 mt-2;
 }
 
 blockquote {
   @apply p-4;
   background-color: rgba(254, 222, 93, 0.3);
   border: 1px solid rgb(254, 222, 93);
+}
+
+code {
+  @apply font-mono;
 }
 
 ul {
