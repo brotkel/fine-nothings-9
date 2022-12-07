@@ -21,7 +21,7 @@
         "cweagans/composer-patches": "^1.7",
         "drupal/codesnippet": "^1.7",
         "drupal/components": "^3.0@beta",
-        "drupal/dark_mode_switch": "1.x-dev@dev",
+        "drupal/dark_mode_switch": "2.x",
         "drupal/devel": "^4.1",
         "drupal/devel_kint_extras": "^1.0",
         "drupal/disqus": "^2.0@alpha",
@@ -81,11 +81,6 @@
                 "[project-root]/.editorconfig": false,
                 "[project-root]/pantheon.upstream.yml": false,
                 "[project-root]/.gitattributes": false
-            }
-        },
-        "patches": {
-            "drupal/dark_mode_switch": {
-                "1.4 patch": "./web/modules/custom/patches/dark_mode_switch.patch"
             }
         }
     },
