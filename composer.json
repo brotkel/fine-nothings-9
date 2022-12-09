@@ -27,6 +27,7 @@
         "drupal/disqus": "^2.0@alpha",
         "drupal/entity_print": "^2.4",
         "drupal/google_analytics": "^4.0",
+        "drupal/link_attributes": "^1.12",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
         "drupal/twig_field_value": "^2.0",

@@ -1279,7 +1279,7 @@ a {
 
 /*# sourceMappingURL=print-styles.css.map */
 
-.social_icon__item svg {
+.social_icon__item svg, .social_icon__item img {
 
     pointer-events: none;
 

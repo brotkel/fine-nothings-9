@@ -1,4 +1,5 @@
-.social_icon__item svg {
+.social_icon__item svg,
+.social_icon__item img {
   @apply pointer-events-none relative z-10;
 }
 
