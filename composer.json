@@ -15,6 +15,7 @@
     },
     "require": {
         "cweagans/composer-patches": "^1.7",
+        "drupal/antibot": "^2.0",
         "drupal/components": "^3.0@beta",
         "drupal/dark_mode_switch": "2.x",
         "drupal/devel": "^5.1",
@@ -22,6 +23,7 @@
         "drupal/disqus": "^2.0@alpha",
         "drupal/entity_print": "^2.4",
         "drupal/google_analytics": "^4.0",
+        "drupal/honeypot": "^2.1",
         "drupal/link_attributes": "^2.0",
         "drupal/paragraphs": "^1.15",
         "drupal/pathauto": "^1.11",
