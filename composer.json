@@ -4,10 +4,6 @@
     "type": "project",
     "license": "MIT",
     "repositories": {
-        "lenient": {
-            "type": "composer",
-            "url": "https://packages.drupal.org/lenient"
-        },
         "0": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
@@ -19,11 +15,10 @@
     },
     "require": {
         "cweagans/composer-patches": "^1.7",
-        "drupal/codesnippet": "^1.7",
         "drupal/components": "^3.0@beta",
         "drupal/dark_mode_switch": "2.x",
-        "drupal/devel": "^4.1",
-        "drupal/devel_kint_extras": "^1.0",
+        "drupal/devel": "^5.1",
+        "drupal/devel_kint_extras": "^1.1",
         "drupal/disqus": "^2.0@alpha",
         "drupal/entity_print": "^2.4",
         "drupal/google_analytics": "^4.0",
@@ -33,6 +28,7 @@
         "drupal/twig_field_value": "^2.0",
         "drupal/twig_tweak": "^3.2",
         "drupal/twigsuggest": "^1.0@RC",
+        "drupal/upgrade_status": "^4.0",
         "drupal/viewsreference": "2.x-dev@dev",
         "drush/drush": "^10",
         "mglaman/composer-drupal-lenient": "^1.0",
@@ -97,10 +93,12 @@
             "cweagans/composer-patches": true,
             "drupal/core-composer-scaffold": true,
             "zaporylie/composer-drupal-optimizations": true,
-            "mglaman/composer-drupal-lenient": true
+            "mglaman/composer-drupal-lenient": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
         }
     },
     "require-dev": {
+        "drupal/core-dev": "9.5.10",
         "kint-php/kint": "^3.3"
     }
 }
