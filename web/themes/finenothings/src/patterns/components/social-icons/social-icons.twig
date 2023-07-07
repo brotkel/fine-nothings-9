@@ -9,12 +9,14 @@
           "image": item.image,
           "text": item.text,
           "url": item.url,
-          "extra_attributes": attributes|without(class),
+          "target": item.options.attributes.target,
+          "rel": item.options.attributes.rel,
+          "extra_attributes": item.options.attributes|without('class'),
           "modifier_mapping": {
             "list": "",
             "item": "social_icon__item",
             "icon": "w-12 h-12",
-            "link": "rounded-xl transition-opacity opacity-0 bg-black dark:bg-transparent dark:focus:bg-gradient-to-b dark:hover:bg-gradient-to-b dark:from-yellow dark:to-pink focus:opacity-5 hover:opacity-5 dark:opacity-100 transition-all"
+            "link": "rounded-xl transition-opacity opacity-0 bg-black dark:bg-transparent dark:focus:bg-gradient-to-b dark:hover:bg-gradient-to-b dark:from-yellow dark:to-pink focus:opacity-5 hover:opacity-5 dark:opacity-100 transition-all " ~ item.options.attributes.class|safe_join(' ')
           }
         } only
       %}

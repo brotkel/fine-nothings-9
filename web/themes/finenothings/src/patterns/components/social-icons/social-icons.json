@@ -13,7 +13,8 @@
     {
       "icon": "reddit",
       "text": "reddit",
-      "url": "https://reddit.com"
+      "url": "https://reddit.com",
+      "ref": "nofollow"
     },
     {
       "icon": "pinterest",
@@ -21,7 +22,8 @@
     },
     {
       "icon": "drupal",
-      "text": "Drupal"
+      "text": "Drupal",
+      "target": "_blank"
     },
     {
       "image": "<img src='https://source.unsplash.com/FIKD9t5_5zQ/128x128' alt='test image' />",

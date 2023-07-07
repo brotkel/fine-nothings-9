@@ -45,15 +45,17 @@
     {% set social_array = [] %}
     {% for item in items %}
       {% if item.content["#paragraph"].get("field_media").value()[0].target_id %}
-        {% set image = drupal_image(item.content["#paragraph"].get("field_media").value()[0].target_id) %}
+        {% set image = drupal_image(item.content["#paragraph"].get("field_media").value()[0].target_id + 2) %}
       {% endif %}
       {% set social_array = social_array|merge(
         {(loop.index0):
           {
             'icon': item.content["#paragraph"].get("field_icon_type").getValue()[0].value,
             'image': image,
+            'image2': image2,
             'text': item.content["#paragraph"].get("field_link").getValue()[0].title,
-            'url': item.content["#paragraph"].get("field_link").getValue()[0].uri
+            'url': item.content["#paragraph"].get("field_link").getValue()[0].uri,
+            'options': item.content["#paragraph"].get("field_link").getValue()[0].options
             },
         },
       ) %}
