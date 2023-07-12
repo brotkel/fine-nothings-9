@@ -4,13 +4,6 @@
     "type": "project",
     "license": "MIT",
     "repositories": {
-        "local-dev": {
-            "type": "path",
-            "url": "/user/Sites/dark_mode_switch",
-            "options": {
-                "symlink": true
-            }
-        },
         "0": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
@@ -24,7 +17,7 @@
         "cweagans/composer-patches": "^1.7",
         "drupal/antibot": "^2.0",
         "drupal/components": "^3.0@beta",
-        "drupal/dark_mode_switch": "@dev",
+        "drupal/dark_mode_switch": "2.x",
         "drupal/devel": "^5.1",
         "drupal/devel_kint_extras": "^1.1",
         "drupal/disqus": "^2.0@alpha",
@@ -34,7 +27,6 @@
         "drupal/link_attributes": "^2.0",
         "drupal/paragraphs": "^1.15",
         "drupal/pathauto": "^1.11",
-        "drupal/stable": "^2.0",
         "drupal/twig_field_value": "^2.0",
         "drupal/twig_tweak": "^3.2",
         "drupal/twigsuggest": "^1.0@RC",
