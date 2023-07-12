@@ -34,36 +34,27 @@
  */
 #}
 <div data-quickedit-entity-id="{{ entity_type }}/{{ element["#object"].id() }}">
-  <section{{ attributes.addClass("mx-auto md:w-3/4 lg:w-1/2") }}>
-    {%
-      include '@finenothings/heading/heading.twig' with {
-        "title": "Find Me Here",
-        "heading_level": "h2",
-        "modifier": "mt-8 mb-4 text-center"
-      } only
-    %}
-    {% set social_array = [] %}
-    {% for item in items %}
-      {% if item.content["#paragraph"].get("field_media").value()[0].target_id %}
-        {% set image = drupal_image(item.content["#paragraph"].get("field_media").value()[0].target_id + 2) %}
-      {% endif %}
-      {% set social_array = social_array|merge(
-        {(loop.index0):
-          {
-            'icon': item.content["#paragraph"].get("field_icon_type").getValue()[0].value,
-            'image': image,
-            'text': item.content["#paragraph"].get("field_link").getValue()[0].title,
-            'url': item.content["#paragraph"].get("field_link").getValue()[0].uri,
-            'options': item.content["#paragraph"].get("field_link").getValue()[0].options
-            },
-        },
-      ) %}
-    {% endfor %}
-    {%
-      include "@finenothings/social-icons/social-icons.twig" with {
-        "items": social_array,
-        "extra_attributes": attributes|without(class)
-      } only
-    %}
-  </section>
+  {% set social_array = [] %}
+  {% for item in items %}
+    {% if item.content["#paragraph"].get("field_media").value()[0].target_id %}
+      {% set image = drupal_image(item.content["#paragraph"].get("field_media").value()[0].target_id + 2) %}
+    {% endif %}
+    {% set social_array = social_array|merge(
+      {(loop.index0):
+        {
+          'icon': item.content["#paragraph"].get("field_icon_type").getValue()[0].value,
+          'image': image,
+          'text': item.content["#paragraph"].get("field_link").getValue()[0].title,
+          'url': item.content["#paragraph"].get("field_link").getValue()[0].uri,
+          'options': item.content["#paragraph"].get("field_link").getValue()[0].options
+          },
+      },
+    ) %}
+  {% endfor %}
+  {%
+    include "@finenothings/social-icons/social-icons.twig" with {
+      "items": social_array,
+      "extra_attributes": attributes|without(class)
+    } only
+  %}
 </div>
