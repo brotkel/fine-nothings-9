@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cb9a6ed1b1fcb69ad11b5067013cd5bc",
+    "content-hash": "975edfdc7424c69c97eec92dac3ca6eb",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2152,33 +2152,17 @@
         },
         {
             "name": "drupal/dark_mode_switch",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/dark_mode_switch.git",
-                "reference": "8.x-2.0"
-            },
+            "version": "dev-8.x-2.x",
             "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/dark_mode_switch-8.x-2.0.zip",
-                "reference": "8.x-2.0",
-                "shasum": "7625240d7e28b829ef8793be56dcb6a705904a1e"
+                "type": "path",
+                "url": "/user/Sites/dark_mode_switch",
+                "reference": "59d042bec6797a79d44716fba8181ac980e5dc6d"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8 || ^9",
+                "drupal/time_field": "^2.0"
             },
             "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-2.0",
-                    "datestamp": "1646166283",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -2187,14 +2171,6 @@
                     "name": "George Anderson (geoanders)",
                     "homepage": "https://www.drupal.org/u/geoanders",
                     "role": "Maintainer"
-                },
-                {
-                    "name": "geoanders",
-                    "homepage": "https://www.drupal.org/user/1270728"
-                },
-                {
-                    "name": "rudam",
-                    "homepage": "https://www.drupal.org/user/2437850"
                 }
             ],
             "description": "Create a switch block to turn the site into a darker version.",
@@ -2205,8 +2181,12 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://git.drupalcode.org/project/dark_mode_switch",
-                "issues": "https://www.drupal.org/project/issues/dark_mode_switch"
+                "issues": "https://www.drupal.org/project/issues/dark_mode_switch",
+                "source": "https://git.drupalcode.org/project/dark_mode_switch"
+            },
+            "transport-options": {
+                "symlink": true,
+                "relative": false
             }
         },
         {
@@ -2881,6 +2861,107 @@
                 "source": "https://cgit.drupalcode.org/pathauto",
                 "issues": "https://www.drupal.org/project/issues/pathauto",
                 "documentation": "https://www.drupal.org/docs/8/modules/pathauto"
+            }
+        },
+        {
+            "name": "drupal/stable",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/stable.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/stable-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "1d1ba799280bd6b9a3c46a158e6026663e080f3f"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1663102967",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bnjmnm",
+                    "homepage": "https://www.drupal.org/user/2369194"
+                },
+                {
+                    "name": "Cottser",
+                    "homepage": "https://www.drupal.org/user/1167326"
+                },
+                {
+                    "name": "lauriii",
+                    "homepage": "https://www.drupal.org/user/1078742"
+                }
+            ],
+            "description": "A base theme using Drupal 8.0.0's core markup and CSS.",
+            "homepage": "https://www.drupal.org/project/stable",
+            "support": {
+                "source": "https://git.drupalcode.org/project/stable"
+            }
+        },
+        {
+            "name": "drupal/time_field",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/time_field.git",
+                "reference": "2.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/time_field-2.1.0.zip",
+                "reference": "2.1.0",
+                "shasum": "5d6668a9deb3e0cd9223796a04b0c87a6272c918"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.0",
+                    "datestamp": "1665151948",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "BramDriesen",
+                    "homepage": "https://www.drupal.org/user/3383264"
+                },
+                {
+                    "name": "lostkoder",
+                    "homepage": "https://www.drupal.org/user/3545132"
+                }
+            ],
+            "description": "Provides 'Time Field' and 'Time Range Field'.",
+            "homepage": "https://www.drupal.org/project/time_field",
+            "support": {
+                "source": "http://git.drupal.org/project/time_field.git",
+                "issues": "https://www.drupal.org/project/issues/time_field"
             }
         },
         {
@@ -12613,6 +12694,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/components": 10,
+        "drupal/dark_mode_switch": 20,
         "drupal/disqus": 15,
         "drupal/twigsuggest": 5,
         "drupal/viewsreference": 20
