@@ -1,0 +1,20 @@
+{#
+/**
+ * @file
+ * Theme override for an 'input' #type form element.
+ *
+ * Available variables:
+ * - attributes: A list of HTML attributes for the input element.
+ * - children: Optional additional rendered elements.
+ *
+ * @see template_preprocess_input()
+ */
+#}
+{%
+  set classes = [
+    'bg-paperwhite/25 border text-sm text-black w-full',
+    'dark:bg-black/25 dark:border-black dark:text-mint dark:text-shadow-current-sm'
+  ]
+%}
+
+<input {{ attributes.addClass(classes)}} {{ attributes}}/>{{ children }}

@@ -2144,29 +2144,29 @@ main a {
 .m-0 {
   margin: 0px;
 }
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 .-my-8 {
   margin-top: -2rem;
   margin-bottom: -2rem;
-}
-.mr-2 {
-  margin-right: 0.5rem;
-}
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 .mt-8 {
   margin-top: 2rem;
 }
 .mb-4 {
   margin-bottom: 1rem;
+}
+.mr-2 {
+  margin-right: 0.5rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 .ml-8 {
   margin-left: 2rem;
@@ -2407,6 +2407,9 @@ main a {
   --tw-bg-opacity: 1;
   background-color: rgba(var(--color-paperwhite), var(--tw-bg-opacity));
 }
+.bg-paperwhite\/25 {
+  background-color: rgba(var(--color-paperwhite), 0.25);
+}
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgba(var(--color-white), var(--tw-bg-opacity));
@@ -2425,9 +2428,6 @@ main a {
 }
 .bg-gray\/20 {
   background-color: rgba(var(--color-gray), 0.2);
-}
-.bg-paperwhite\/25 {
-  background-color: rgba(var(--color-paperwhite), 0.25);
 }
 .bg-black {
   --tw-bg-opacity: 1;
@@ -3028,6 +3028,10 @@ main a {
 .dark .dark\:border-none {
   border-style: none;
 }
+.dark .dark\:border-black {
+  --tw-border-opacity: 1;
+  border-color: rgba(var(--color-black), var(--tw-border-opacity));
+}
 .dark .dark\:border-sky\/50 {
   border-color: rgba(var(--color-sky), 0.5);
 }
@@ -3042,12 +3046,12 @@ main a {
   --tw-bg-opacity: 1;
   background-color: rgba(var(--color-night), var(--tw-bg-opacity));
 }
+.dark .dark\:bg-black\/25 {
+  background-color: rgba(var(--color-black), 0.25);
+}
 .dark .dark\:bg-sky {
   --tw-bg-opacity: 1;
   background-color: rgba(var(--color-sky), var(--tw-bg-opacity));
-}
-.dark .dark\:bg-black\/25 {
-  background-color: rgba(var(--color-black), 0.25);
 }
 .dark .dark\:bg-transparent {
   background-color: transparent;
@@ -3095,6 +3099,10 @@ main a {
 .dark .dark\:font-mono {
   font-family: Roboto Mono Flex, Roboto Mono, ui-monospace, monospace;
 }
+.dark .dark\:text-mint {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-mint), var(--tw-text-opacity));
+}
 .dark .dark\:text-white {
   --tw-text-opacity: 1;
   color: rgba(var(--color-white), var(--tw-text-opacity));
@@ -3102,10 +3110,6 @@ main a {
 .dark .dark\:text-night {
   --tw-text-opacity: 1;
   color: rgba(var(--color-night), var(--tw-text-opacity));
-}
-.dark .dark\:text-mint {
-  --tw-text-opacity: 1;
-  color: rgba(var(--color-mint), var(--tw-text-opacity));
 }
 .dark .dark\:text-current {
   color: currentColor;
@@ -3227,11 +3231,11 @@ main a {
   .md\:w-3\/4 {
     width: 75%;
   }
-  .md\:w-1\/4 {
-    width: 25%;
-  }
   .md\:w-1\/2 {
     width: 50%;
+  }
+  .md\:w-1\/4 {
+    width: 25%;
   }
   .md\:flex-1 {
     flex: 1 1 0%;
